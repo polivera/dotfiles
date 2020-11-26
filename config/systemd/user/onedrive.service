@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount OneDrive with rclone
+Wants=display-manager.service
+After=display-manager.service
+
+[Service]
+Type=simple
+Environment=XAUTHORITY=%h/.Xauthority
+ExecStart=/home/pablo/.config/scripts/bin/mount-onedrive
+ExecStop=fusermount -u $HOME/OneDrive
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical-session.target

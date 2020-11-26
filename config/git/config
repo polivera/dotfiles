@@ -1,0 +1,8 @@
+[user]
+	name = Pablo Olivera
+	email = p.oliverav@gmail.com
+[core]
+	excludesfile = /home/pablo/.config/git/gitignore_global
+	filemode = false
+[pull]
+	rebase = false

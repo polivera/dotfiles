@@ -1,0 +1,14 @@
+[Added Associations]
+application/xhtml+xml=firefox.desktop;google-chrome.desktop;
+application/xhtml_xml=firefox.desktop;google-chrome.desktop;
+application/xml=firefox.desktop;google-chrome.desktop;
+
+[Default Applications]
+text/plain=visual-studio-code.desktop
+application/xhtml+xml=firefox.desktop
+application/xhtml_xml=firefox.desktop
+application/xml=firefox.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/slack=slack.desktop
+

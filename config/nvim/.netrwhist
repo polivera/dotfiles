@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/mnt/data/pablo/Config/scripts/installs/Arch'
+let g:netrw_dirhist_8='/mnt/data/pablo/Config/scripts/installs'
+let g:netrw_dirhist_7='/mnt/data/pablo/Config/scripts'
+let g:netrw_dirhist_6='/mnt/data/pablo/Config/dotfiles'
+let g:netrw_dirhist_5='/mnt/data/pablo/Config/dotfiles/install/Arch'
+let g:netrw_dirhist_4='/mnt/data/pablo/Projects/personal/sell4new/src'
+let g:netrw_dirhist_3='/mnt/data/pablo/Projects/personal/caveowl/jwthelper/src'
+let g:netrw_dirhist_2='/mnt/data/pablo/Projects/personal/caveowl/jwthelper'
+let g:netrw_dirhist_1='/mnt/data/pablo/Projects/personal/caveowl/jwthelper/test'
