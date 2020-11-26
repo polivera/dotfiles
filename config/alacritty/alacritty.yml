@@ -162,6 +162,6 @@ schemes:
       cyan:    '#67d3c2'
       white:   '#ffffff'
 
-colors: *panda
+colors: *onedark
 
-background_opacity: 0.95
+background_opacity: 1

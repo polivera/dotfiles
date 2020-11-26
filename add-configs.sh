@@ -11,12 +11,16 @@ rm -R $HOME/.config/alacritty \
       $HOME/.config/mopidy \
       $HOME/.config/nvim \
       $HOME/.config/picom \
+      $HOME/.config/polybar \
+      $HOME/.config/shellscripts \
       $HOME/.config/systemd \
       $HOME/.config/tmux \
       $HOME/.config/urxvt \
-      $HOME/.config/zsh \
       $HOME/.config/mimeapps.list \
       $HOME/.local/share/applications/mimeapps.list \
+      $HOME/.imwheelrc \
+      $HOME/.zshenv \
+      $HOME/.zshrc \
       > /dev/null 2>&1
 
 
@@ -31,19 +35,25 @@ ln -s $CONFIGPATH/git $HOME/.config
 ln -s $CONFIGPATH/i3 $HOME/.config
 # Picom (compton)
 ln -s $CONFIGPATH/picom $HOME/.config
+# Polybar
+ln -s $CONFIGPATH/polybar $HOME/.config
 # Neovim
 ln -s $CONFIGPATH/nvim $HOME/.config
 # Mopidy
 ln -s $CONFIGPATH/mopidy $HOME/.config
+# shellscripts
+ln -s $CONFIGPATH/shellscripts $HOME/.config
 # systemd
 ln -s $CONFIGPATH/systemd $HOME/.config
 # tmux
 ln -s $CONFIGPATH/tmux $HOME/.config
 # urxvt
 ln -s $CONFIGPATH/urxvt $HOME/.config
-# zsh
-ln -s $CONFIGPATH/zsh $HOME/.config
 # mimeapps
 ln -s $CONFIGPATH/mimeapps/mimeapps.list $HOME/.config
 ln -s $CONFIGPATH/mimeapps/mimeapps.list $HOME/.local/share/applications
-
+# imwheel
+ln -s $SCRIPTPATH/.imwheelrc $HOME
+# zsh
+ln -s $SCRIPTPATH/.zshenv $HOME
+ln -s $SCRIPTPATH/.zshrc $HOME

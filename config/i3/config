@@ -10,16 +10,16 @@ set $defaultLauncher /home/pablo/.config/rofi/bin/launcher_colorful
 set $refreshI3Status killall -SIGUSR1 i3status
 
 # Define names for default workspaces for which we configure key bindings later on.
-set $ws1 "Browser"
-set $ws2 "IDEs"
-set $ws3 "Terminals"
-set $ws4 "Chat"
-set $ws5 "5"
+set $ws1 " 1"
+set $ws2 " 2"
+set $ws3 " 3"
+set $ws4 " 4"
+set $ws5 " 5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "Music"
+set $ws10 " 0"
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Set default configs
@@ -45,6 +45,7 @@ assign [class="firefox"] $ws1
 assign [class="Code"] $ws2
 assign [class="Slack"] $ws4
 assign [class="Spotify"] $ws10
+assign [class="KeePassXC"] $ws5
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Execs
@@ -61,19 +62,37 @@ exec picom -b --config /home/pablo/.config/picom/picom.conf
 # Dunst notification daemon
 exec dunst
 
+# Set wallpaper
+exec feh --bg-scale /mnt/storage/Pictures/Wallpapers/cowboy\ bebop.jpg
+
 # ----------------------------------------------------------------------------------------------------------------------
 # Key Bindings
 # ----------------------------------------------------------------------------------------------------------------------
 
-# Use pactl to adjust volume in PulseAudio.
+# Start a terminal
+bindsym $mod+Return exec $defaultTerminal
+
+# XF86 Keys (audio, player, brightness, touchpad) {{{
+# Pulse Audio control. Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refreshI3Status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refreshI3Status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refreshI3Status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refreshI3Status
 
-# tart a terminal
-bindsym $mod+Return exec $defaultTerminal
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+#}}}
+
+# Window movement {{{
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -94,25 +113,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -130,6 +135,7 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+#}}}
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1

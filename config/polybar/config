@@ -1,0 +1,184 @@
+; ------------------------------------------------------------------
+;   Polybar Config
+; ------------------------------------------------------------------
+[colors]
+text-color = #FFFFFF
+text-color-focused = #33FFFFFF
+text-color-alt = #55FCFCFC
+
+bar-background-color = #CF172A47
+bar-backgruond-color-alt = #CFFAFAFA
+label-background = #CF32E463E
+label-background-alt = #CF3C5A46
+label-background-alt-2 = #CF546E53
+label-background-focused = #CF708963
+label-background-focused-alt = #CFA1BB76 
+
+;background-alt = #cf3C5A46
+;background-unf = #cf2E463E
+;background-mod0 = #cf3C5A46
+;background-mod1 = #cf546E53
+;background-mod2 = #cf708963
+;background-alt2 = #cfA1BB76
+
+signal-strength-5 = #CF17A620
+signal-strength-4 = #CF17A620
+signal-strength-3 = #CFF1ED58
+signal-strength-2 = #CFF1ED58
+signal-strength-1 = #CFEB5521
+signal-strength-0 = #CFEB5521
+
+;foreground = #F3F3BA
+;foreground-alt = #F3F3BA
+;primary = #F3F3BA
+;secondary = #F3F3BA
+
+; ------------------------------------------------------------------
+[icons]
+wifi-signal-0 = ""
+wifi-signal-1 = ""
+wifi-signal-2 = ""
+wifi-signal-3 = ""
+wifi-signal-4 = ""
+wifi-signal-5 = ""
+batery-capacity-0 = 
+batery-capacity-1 = 
+batery-capacity-2 = 
+batery-capacity-3 = 
+batery-capacity-4 = 
+power =  
+cloud =  
+high-volume = 
+low-volume = 
+muted = 
+calendar = 
+clock = 
+
+
+
+; ------------------------------------------------------------------
+[fonts]
+font-0 = Hack Nerd Font:pixelsize=9;
+font-1 = HackNerdFont:pixelsize=9;
+font-2 = NotoColorEmoji:fontformat=truetype:scale=9:antialias=false;
+font-3 = Roboto::pixelsize=9:antialias=false;
+
+; ------------------------------------------------------------------
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; ------------------------------------------------------------------
+[bar/MyPoly]
+width = 100%
+height = 25
+offset-x = 0
+offset-y = 0
+radius = 0.0
+fixed-center = true
+padding-left = 0
+padding-right = 0
+
+background = ${colors.bar-background-color}
+foreground = ${colors.text-color}
+line-size = 0
+line-color = #f00
+border-size = 0
+border-color = #00000000
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = ${fonts.font-0}
+font-1 = ${fonts.font-1}
+font-2 = ${fonts.font-2}
+font-3 = ${fonts.font-3}
+
+modules-left    =   i3 
+modules-center  =   date 
+modules-right   =   wireless-network
+
+tray-position = right
+tray-padding = 1
+tray-background = ${colors.bar-backgruond-color-alt}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
+
+wm-restack = i3
+
+; ------------------------------------------------------------------
+[module/i3]
+type = internal/i3
+
+; Resize
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = #e60053
+
+; Focus
+label-focused = %name%
+label-focused-foreground = ${colors.text-color-focused}
+label-focused-background = ${colors.label-background-alt-2}
+label-focused-padding = 2
+
+; Unfocus
+label-unfocused = %name%
+label-unfocused-foreground = ${colors.text-color}
+label-unfocused-background = ${colors.label-background-alt}
+label-unfocused-padding = 2
+
+
+; Visible
+label-visible = %name%
+label-visible-underline = ${colors.text-color}
+label-visible-padding = 2
+
+; Urgent
+label-urgent = %name%
+label-urgent-foreground = ${colors.text-color-alt}
+label-urgent-background = ${colors.label-background-focused}
+label-urgent-padding = 2
+
+; ------------------------------------------------------------------
+[module/wireless-network]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+
+label-connected = %essid%
+label-connected-foreground = ${colors.text-color}
+
+label-disconnected = not connected
+label-disconnected-foreground = not connected
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-background = ${colors.label-background}
+format-packetloss = <animation-packetloss> <label-connected>
+
+ramp-signal-0 = ${icons.wifi-signal-0}
+ramp-signal-1 = ${icons.wifi-signal-1}
+ramp-signal-2 = ${icons.wifi-signal-2}
+ramp-signal-3 = ${icons.wifi-signal-3}
+ramp-signal-4 = ${icons.wifi-signal-4}
+ramp-signal-5 = ${icons.wifi-signal-5}
+ramp-signal-5-foreground = ${colors.signal-strength-5}
+ramp-signal-4-foreground = ${colors.signal-strength-4}
+ramp-signal-3-foreground = ${colors.signal-strength-3}
+ramp-signal-2-foreground = ${colors.signal-strength-2}
+ramp-signal-1-foreground = ${colors.signal-strength-1}
+ramp-signal-0-foreground = ${colors.signal-strength-0}
+
+
+; -------------------------------------------------------------------
+[module/date]
+type = internal/date
+interval = 5
+date = 
+date-alt = " %Y-%m-%d"
+time = "   %a %b %d     %I:%M %p  "
+time-alt = %H:%M:%S
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #0a6cf5
+
+label = %date% %time%

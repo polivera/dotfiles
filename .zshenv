@@ -22,8 +22,8 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
 
 # Path
 typeset -U PATH path
-path=("$HOME/.local/bin" "$NPM_CONFIG_PREFIX/bin" "$GOPATH/bin"
-  "$COMPOSER_PATH/vendor/bin" "$path[@]")
+path=("$HOME/.local/bin" "$NPM_CONFIG_PREFIX/bin"
+  "$GOPATH/bin" "$COMPOSER_PATH/vendor/bin" "$path[@]")
 export PATH
 
 # Default Apps
