@@ -5,6 +5,7 @@ CONFIGPATH=$SCRIPTPATH/config
 
 # Remove previous configuration
 rm -R $HOME/.config/alacritty \
+      $HOME/.config/bspwm \
       $HOME/.config/dunst \
       $HOME/.config/git \
       $HOME/.config/i3 \
@@ -12,7 +13,9 @@ rm -R $HOME/.config/alacritty \
       $HOME/.config/nvim \
       $HOME/.config/picom \
       $HOME/.config/polybar \
+      $HOME/.config/rofi \
       $HOME/.config/shellscripts \
+      $HOME/.config/sxhkd \
       $HOME/.config/systemd \
       $HOME/.config/tmux \
       $HOME/.config/urxvt \
@@ -27,6 +30,8 @@ rm -R $HOME/.config/alacritty \
 # Add symlinks for the configs
 # Alacritty
 ln -s $CONFIGPATH/alacritty $HOME/.config
+# BSP Window Manager
+ln -s $CONFIGPATH/bspwm $HOME/.config
 # Dunst
 ln -s $CONFIGPATH/dunst $HOME/.config
 # Git
@@ -41,8 +46,12 @@ ln -s $CONFIGPATH/polybar $HOME/.config
 ln -s $CONFIGPATH/nvim $HOME/.config
 # Mopidy
 ln -s $CONFIGPATH/mopidy $HOME/.config
+# rofi
+ln -s $CONFIGPATH/rofi $HOME/.config
 # shellscripts
 ln -s $CONFIGPATH/shellscripts $HOME/.config
+# Simple X HotKey Daemon
+ln -s $CONFIGPATH/sxhkd $HOME/.config
 # systemd
 ln -s $CONFIGPATH/systemd $HOME/.config
 # tmux

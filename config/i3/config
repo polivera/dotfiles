@@ -5,21 +5,21 @@ set $fontFamily Roboto
 set $fontSize 9
 
 set $defaultTerminal alacritty
-set $defaultLauncher /home/pablo/.config/rofi/bin/launcher_colorful
+set $defaultLauncher /home/pablo/.config/rofi/launcher.sh
 
 set $refreshI3Status killall -SIGUSR1 i3status
 
 # Define names for default workspaces for which we configure key bindings later on.
-set $ws1 " 1"
-set $ws2 " 2"
-set $ws3 " 3"
-set $ws4 " 4"
-set $ws5 " 5"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 " 0"
+set $ws10 "0"
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Set default configs
@@ -31,10 +31,9 @@ font pango:$fontFamily $fontSize
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-
 #Gaps and Window
 for_window [class="^.*"] border pixel 0
-gaps inner 10 
+gaps inner 6 
 
 hide_edge_borders vertical
 
@@ -64,6 +63,9 @@ exec dunst
 
 # Set wallpaper
 exec feh --bg-scale /mnt/storage/Pictures/Wallpapers/cowboy\ bebop.jpg
+
+# Polybar
+exec_always $HOME/.config/polybar/launch.sh
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Key Bindings
@@ -194,9 +196,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-}

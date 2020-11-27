@@ -21,9 +21,17 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # Key bindings
+# ctrl+arrows
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+# Home
+bindkey "^[[H"   beginning-of-line
+# end
+bindkey "^[[F"   end-of-line
+# del
+bindkey "^[[3~"  delete-char
 
+# Spaceship theme
 SPACESHIP_PROMPT_ADD_NEWLINE=true
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_CHAR_SYMBOL=❯
