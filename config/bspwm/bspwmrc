@@ -5,7 +5,7 @@ bspc rule -r "*"
 pgrep -x sxhkd > /dev/null || sxhkd &
 nm-applet &
 xrdb ~/.Xresources &
-feh --bg-scale /mnt/storage/Pictures/Wallpapers/cowboy\ bebop.jpg
+feh --bg-scale /mnt/storage/Pictures/Wallpapers/more\ landscape.jpg
 picom -b --config /home/pablo/.config/picom/picom.conf
 dunst &
 ~/.config/polybar/launch.sh &
@@ -13,7 +13,7 @@ dunst &
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 ###---MONITORS---###
-bspc monitor -d 1 2 3 4 5 6 7
+bspc monitor -d Browser Code Terminal Chat Keys Misc Music
 
 ###---Global Settings---###
 bspc config normal_border_color	"#4c566a"
