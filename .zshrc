@@ -1,10 +1,6 @@
-# Python virtualenv
-if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
-  source /usr/bin/virtualenvwrapper.sh
-elif [[ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]]; then
-  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-fi
 
+# Disable ctrl + s
+stty -ixon
 
 # Include custom shell scripts
 for f in $HOME/.config/shellscripts/*; do source "$f"; done
@@ -69,3 +65,9 @@ prompt spaceship
 # ZSH Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
+# Python virtualenv
+if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
+  source /usr/bin/virtualenvwrapper.sh
+elif [[ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]]; then
+  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+fi
