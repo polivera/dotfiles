@@ -21,6 +21,7 @@ rm -R $HOME/.config/alacritty \
       $HOME/.config/urxvt \
       $HOME/.config/mimeapps.list \
       $HOME/.local/share/applications/mimeapps.list \
+      $HOME/.local/share/fonts \
       $HOME/.imwheelrc \
       $HOME/.zshenv \
       $HOME/.zshrc \
@@ -61,6 +62,8 @@ ln -s $CONFIGPATH/urxvt $HOME/.config
 # mimeapps
 ln -s $CONFIGPATH/mimeapps/mimeapps.list $HOME/.config
 ln -s $CONFIGPATH/mimeapps/mimeapps.list $HOME/.local/share/applications
+# fonts
+ln -s $SCRIPTPATH/fonts $HOME/.local/share
 # imwheel
 ln -s $SCRIPTPATH/.imwheelrc $HOME
 # zsh

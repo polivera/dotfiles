@@ -18,5 +18,8 @@ Plug 'airblade/vim-rooter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" CSS color
+Plug 'ap/vim-css-color'
+
 " Initialize plugin system
 call plug#end()

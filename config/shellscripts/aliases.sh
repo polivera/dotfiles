@@ -10,6 +10,6 @@ alias srcrc='source $HOME/.zshrc'
 
 # pacman
 alias pm='sudo pacman'
-alias openconnect-csd='sudo openconnect --csd-wrapper=/usr/lib/openconnect/csd-post.sh'
-alias openconnect='sudo openconnect'
+alias opc-csd='sudo openconnect --csd-wrapper=/usr/lib/openconnect/csd-post.sh'
+alias opc='sudo openconnect'
 

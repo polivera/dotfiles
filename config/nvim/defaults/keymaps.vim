@@ -16,6 +16,16 @@ nnoremap <Space> <Nop>
 vnoremap < <gv
 vnoremap > >gv
 
+" No yank on delete, move that functionality
+" to <leader>d
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
+nnoremap <leader>d d
+xnoremap <leader>d d
+xnoremap <leader>p dP
+
+
 if exists('g:vscode')
 
   " Simulate same TAB behavior in VSCode
