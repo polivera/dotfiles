@@ -18,6 +18,8 @@ picom -b --config /home/pablo/.config/picom/picom.conf
 dunst &
 # Load polybar
 ~/.config/polybar/launch.sh &
+# Redshift (bluelight filter)
+redshift
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
