@@ -162,6 +162,6 @@ schemes:
       cyan:    '#67d3c2'
       white:   '#ffffff'
 
-colors: *onedark
+colors: *nord
 
 background_opacity: 1

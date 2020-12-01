@@ -10,6 +10,11 @@ alias srcrc='source $HOME/.zshrc'
 
 # pacman
 alias pm='sudo pacman'
+
+# openconnect
 alias opc-csd='sudo openconnect --csd-wrapper=/usr/lib/openconnect/csd-post.sh'
 alias opc='sudo openconnect'
+
+# git
+alias gac='git add . && git commit'
 

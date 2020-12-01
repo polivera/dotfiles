@@ -18,14 +18,16 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # Key bindings
 # ctrl+arrows
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
+bindkey "\e[1;5C" forward-word
+bindkey "\e[1;5D" backward-word
 # Home
-bindkey "^[[H"   beginning-of-line
+bindkey "\e[1~" beginning-of-line
 # end
-bindkey "^[[F"   end-of-line
+bindkey "\e[4~" end-of-line
 # del
-bindkey "^[[3~"  delete-char
+bindkey "\e[3~" delete-char
+# insert
+bindkey "\e[2~" quoted-insert 
 
 # Spaceship theme
 SPACESHIP_PROMPT_ADD_NEWLINE=true
