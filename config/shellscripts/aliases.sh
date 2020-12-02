@@ -1,6 +1,9 @@
 # ls modifications
-alias ls='ls -l -h --color --group-directories-first'
+alias ls='exa --icons --color always --group-directories-first'
+alias ll='ls -l'
+alias lt='ls -l --tree --git-ignore'
 alias la='ls -a'
+alias lla='ll -a'
 
 # visudo weird immitation
 alias vialias='$EDITOR $XDG_CONFIG_HOME/shellscripts/aliases.sh'

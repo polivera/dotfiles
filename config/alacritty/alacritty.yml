@@ -20,7 +20,12 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 9.5
+  size: 10
+
+window:
+  padding:
+    y: 5
+    x: 5
 
 schemes:
   gruvbox-dark: &gruvdark
