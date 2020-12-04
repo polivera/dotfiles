@@ -28,10 +28,6 @@ bindkey "\e[4~" end-of-line
 bindkey "\e[3~" delete-char
 # insert
 bindkey "\e[2~" quoted-insert 
-# Search history
-bindkey "^R" history-incremental-search-backward
-bindkey "^E" history-incremental-search-forward
-
 
 # Spaceship theme
 SPACESHIP_PROMPT_ADD_NEWLINE=true
@@ -70,10 +66,16 @@ prompt spaceship
 
 # ZSH Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+#
+# FZF
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
 
 # Python virtualenv
-if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
-  source /usr/bin/virtualenvwrapper.sh
-elif [[ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]]; then
-  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-fi
+#if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
+  #source /usr/bin/virtualenvwrapper.sh
+#elif [[ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]]; then
+  #source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+#fi
+
