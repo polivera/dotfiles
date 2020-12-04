@@ -33,11 +33,6 @@ bindkey "^R" history-incremental-search-backward
 bindkey "^E" history-incremental-search-forward
 
 
-h() {
-  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac --height "50%" | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
-}
-
-
 # Spaceship theme
 SPACESHIP_PROMPT_ADD_NEWLINE=true
 SPACESHIP_PROMPT_SEPARATE_LINE=true

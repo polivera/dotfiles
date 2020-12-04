@@ -4,24 +4,24 @@ SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 CONFIGPATH=$SCRIPTPATH/config
 
 # Remove previous configuration
-rm -R $HOME/.config/alacritty \
-      $HOME/.config/bspwm \
-      $HOME/.config/dunst \
-      $HOME/.config/git \
-      $HOME/.config/i3 \
-      $HOME/.config/mopidy \
-      $HOME/.config/nvim \
-      $HOME/.config/picom \
-      $HOME/.config/polybar \
-      $HOME/.config/rofi \
-      $HOME/.config/shellscripts \
-      $HOME/.config/sxhkd \
-      $HOME/.config/systemd \
-      $HOME/.config/tmux \
-      $HOME/.config/urxvt \
-      $HOME/.config/mimeapps.list \
-      $HOME/.local/share/applications/mimeapps.list \
-      $HOME/.local/share/fonts \
+rm -R $XDG_CONFIG_HOME/alacritty \
+      $XDG_CONFIG_HOME/bspwm \
+      $XDG_CONFIG_HOME/dunst \
+      $XDG_CONFIG_HOME/git \
+      $XDG_CONFIG_HOME/i3 \
+      $XDG_CONFIG_HOME/mopidy \
+      $XDG_CONFIG_HOME/nvim \
+      $XDG_CONFIG_HOME/picom \
+      $XDG_CONFIG_HOME/polybar \
+      $XDG_CONFIG_HOME/rofi \
+      $XDG_CONFIG_HOME/shellscripts \
+      $XDG_CONFIG_HOME/sxhkd \
+      $XDG_CONFIG_HOME/systemd \
+      $XDG_CONFIG_HOME/tmux \
+      $XDG_CONFIG_HOME/urxvt \
+      $XDG_CONFIG_HOME/mimeapps.list \
+      $XDG_DATA_HOME/applications/mimeapps.list \
+      $XDG_DATA_HOME/fonts \
       $HOME/.imwheelrc \
       $HOME/.zshenv \
       $HOME/.zshrc \
@@ -30,40 +30,40 @@ rm -R $HOME/.config/alacritty \
 
 # Add symlinks for the configs
 # Alacritty
-ln -s $CONFIGPATH/alacritty $HOME/.config
+ln -s $CONFIGPATH/alacritty $XDG_CONFIG_HOME
 # BSP Window Manager
-ln -s $CONFIGPATH/bspwm $HOME/.config
+ln -s $CONFIGPATH/bspwm $XDG_CONFIG_HOME
 # Dunst
-ln -s $CONFIGPATH/dunst $HOME/.config
+ln -s $CONFIGPATH/dunst $XDG_CONFIG_HOME
 # Git
-ln -s $CONFIGPATH/git $HOME/.config
+ln -s $CONFIGPATH/git $XDG_CONFIG_HOME
 # i3
-ln -s $CONFIGPATH/i3 $HOME/.config
+ln -s $CONFIGPATH/i3 $XDG_CONFIG_HOME
 # Picom (compton)
-ln -s $CONFIGPATH/picom $HOME/.config
+ln -s $CONFIGPATH/picom $XDG_CONFIG_HOME
 # Polybar
-ln -s $CONFIGPATH/polybar $HOME/.config
+ln -s $CONFIGPATH/polybar $XDG_CONFIG_HOME
 # Neovim
-ln -s $CONFIGPATH/nvim $HOME/.config
+ln -s $CONFIGPATH/nvim $XDG_CONFIG_HOME
 # Mopidy
-ln -s $CONFIGPATH/mopidy $HOME/.config
+ln -s $CONFIGPATH/mopidy $XDG_CONFIG_HOME
 # rofi
-ln -s $CONFIGPATH/rofi $HOME/.config
+ln -s $CONFIGPATH/rofi $XDG_CONFIG_HOME
 # shellscripts
-ln -s $CONFIGPATH/shellscripts $HOME/.config
+ln -s $CONFIGPATH/shellscripts $XDG_CONFIG_HOME
 # Simple X HotKey Daemon
-ln -s $CONFIGPATH/sxhkd $HOME/.config
+ln -s $CONFIGPATH/sxhkd $XDG_CONFIG_HOME
 # systemd
-ln -s $CONFIGPATH/systemd $HOME/.config
+ln -s $CONFIGPATH/systemd $XDG_CONFIG_HOME
 # tmux
-ln -s $CONFIGPATH/tmux $HOME/.config
+ln -s $CONFIGPATH/tmux $XDG_CONFIG_HOME
 # urxvt
-ln -s $CONFIGPATH/urxvt $HOME/.config
+ln -s $CONFIGPATH/urxvt $XDG_CONFIG_HOME
 # mimeapps
-ln -s $CONFIGPATH/mimeapps/mimeapps.list $HOME/.config
-ln -s $CONFIGPATH/mimeapps/mimeapps.list $HOME/.local/share/applications
+ln -s $CONFIGPATH/mimeapps/mimeapps.list $XDG_CONFIG_HOME
+ln -s $CONFIGPATH/mimeapps/mimeapps.list $XDG_DATA_HOME/applications
 # fonts
-ln -s $SCRIPTPATH/fonts $HOME/.local/share
+ln -s $SCRIPTPATH/fonts $XDG_DATA_HOME
 # imwheel
 ln -s $SCRIPTPATH/.imwheelrc $HOME
 # zsh
