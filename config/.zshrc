@@ -71,11 +71,3 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
-
-# Python virtualenv
-#if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
-  #source /usr/bin/virtualenvwrapper.sh
-#elif [[ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]]; then
-  #source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-#fi
-

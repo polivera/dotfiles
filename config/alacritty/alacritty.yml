@@ -1,22 +1,23 @@
 # Font configuration
 font:
   normal:
+    #family: FuraMono Nerd Font Mono 
     family: Hack Nerd Font
     style: Regular
 
   # Bold font face
   bold:
-    family: Hack Nerd Font
+    family: FuraMono Nerd Font Mono 
     style: Bold
 
   # Italic font face
   italic:
-    family: Hack Nerd Font
+    family: FuraMono Nerd Font Mono 
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Hack Nerd Font
+    family: FuraMono Nerd Font Mono 
     style: Bold Italic
 
   # Point size
@@ -167,6 +168,6 @@ schemes:
       cyan:    '#67d3c2'
       white:   '#ffffff'
 
-colors: *nord
+colors: *gruvdark
 
 background_opacity: 1

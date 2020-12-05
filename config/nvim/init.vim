@@ -1,18 +1,21 @@
-""" General configuration """
+"-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+" General config
+"-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 " Plugins install
-source $HOME/.config/nvim/vim-plug.vim
+source $XDG_CONFIG_HOME/nvim/vim-plug.vim
 " Base Config
-source $HOME/.config/nvim/defaults/settings.vim
+source $XDG_CONFIG_HOME/nvim/defaults/settings.vim
 " Keymaps
-source $HOME/.config/nvim/defaults/keymaps.vim
+source $XDG_CONFIG_HOME/nvim/defaults/keymaps.vim
 " Theme
-source $HOME/.config/nvim/defaults/themes.vim
+source $XDG_CONFIG_HOME/nvim/defaults/themes.vim
 
 " ========================================================== "
 " == Pugins Configuration ================================== "
 " ========================================================== "
 
-source ~/.config/nvim/plugins/coc.rc.vim
-source ~/.config/nvim/plugins/fzf.rc.vim
-source ~/.config/nvim/plugins/airline.rc.vim
+source $XDG_CONFIG_HOME/nvim/plugins/coc.rc.vim
+source $XDG_CONFIG_HOME/nvim/plugins/fzf.rc.vim
+source $XDG_CONFIG_HOME/nvim/plugins/airline.rc.vim
 

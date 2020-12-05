@@ -5,6 +5,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " Themes
 Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 " Conquer of completion
 Plug 'neoclide/coc.nvim'
@@ -20,6 +21,9 @@ Plug 'vim-airline/vim-airline-themes'
 
 " CSS color
 Plug 'ap/vim-css-color'
+
+" JSX syntax highligh
+Plug 'mxw/vim-jsx'
 
 " Initialize plugin system
 call plug#end()
