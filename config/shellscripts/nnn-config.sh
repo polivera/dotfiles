@@ -1,0 +1,1 @@
+/mnt/data/pablo/Config/dotfiles/config/nnn/nnn-config.sh
