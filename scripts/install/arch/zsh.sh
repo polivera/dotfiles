@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source ./../.env.sh
+echo 'Installing zsh'
+
+source ./.env.sh
 
 sudo pacman -S \
   zsh exa fzf \
@@ -20,4 +22,3 @@ ln -s $DOTFILES_DIR/.zshenv $HOME
 ln -s $DOTFILES_DIR/shellscripts $XDG_CONFIG_HOME
 
 chsh -s /usr/bin/zsh
-

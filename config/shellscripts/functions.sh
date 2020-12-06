@@ -8,4 +8,3 @@ function loadvirtualenvs {
     source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
   fi
 }
-

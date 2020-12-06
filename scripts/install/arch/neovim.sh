@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo 'Installing neovim'
+
 source ./../.env.sh
 
 sudo pacman -S neovim python-pynvim fzf ripgrep the_silver_searcher fd xclip --needed --noconfirm

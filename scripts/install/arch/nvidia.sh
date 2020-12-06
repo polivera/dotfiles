@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo 'Installing nvidia'
+
 sudo pacman -S nvidia \
     ffnvcodec-headers \
     libvdpau libxnvctrl \

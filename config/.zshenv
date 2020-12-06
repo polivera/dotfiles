@@ -25,18 +25,3 @@ typeset -U PATH path
 path=("$HOME/.local/bin" "$NPM_CONFIG_PREFIX/bin"
   "$GOPATH/bin" "$COMPOSER_PATH/vendor/bin" "$path[@]")
 export PATH
-
-# Default Apps
-export EDITOR="nvim"
-export READER="zathura"
-export VISUAL="nvim"
-export TERMINAL="alacritty"
-export BROWSER="firefox"
-export VIDEO="vlc"
-export IMAGE="sxiv"
-export COLORTERM="truecolor"
-export OPENER="xdg-open"
-export PAGER="less"
-export WM="i3"
-
-export NNN_PLUG='f:fzcd;o:fzopen'

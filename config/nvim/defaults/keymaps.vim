@@ -37,7 +37,7 @@ nnoremap <silent> <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <silent> <S-TAB> :bprevious<CR>
 " Close tab
-nnoremap <C-w> :bd
+nnoremap <C-w> :bd<CR>
 
 " Move selected line / block of text in visual mode
 noremap K :move '<-2<CR>gv-gv
