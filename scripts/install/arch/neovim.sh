@@ -2,7 +2,7 @@
 
 echo 'Installing neovim'
 
-source ./../.env.sh
+source ./.env.sh
 
 sudo pacman -S neovim python-pynvim fzf ripgrep the_silver_searcher fd xclip --needed --noconfirm
 
@@ -31,4 +31,3 @@ if [[ -x /usr/bin/npm ]]; then
     coc-explorer \
     --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 fi
-

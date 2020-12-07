@@ -1,0 +1,14 @@
+#!/bin/bash
+
+CURR_PATH=`pwd`
+
+if git -C $CURR_PATH rev-parse; then
+    GITURL=$(git remote get-url origin | sed -e 's/.*@//' | sed -e 's/:/\//')
+    GITURL="https://www.$GITURL/tree/$(git branch --show-current)"
+    GITURL="$(echo $GITURL | sed -e 's/\.git\//\//')"
+
+    xdg-open $GITURL &> /dev/null
+fi
+
+
+

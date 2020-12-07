@@ -9,5 +9,5 @@ sudo pacman -S ttf-dejavu ttf-droid \
     awesome-terminal-fonts \
     --needed --noconfirm
 
-yay -S ttf-yosemite-san-francisco-font-git
+yay -S ttf-yosemite-san-francisco-font-git --needed --noconfirm
 

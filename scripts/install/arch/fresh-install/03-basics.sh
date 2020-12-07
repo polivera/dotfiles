@@ -17,3 +17,4 @@ yay -S aic94xx-firmware wd719x-firmware \
 
 sudo mkinitcpio -P
 
+../zsh.sh
