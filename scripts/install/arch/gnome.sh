@@ -15,6 +15,6 @@ sudo pacman -S avahi eog evince file-roller gdm \
     gst-plugins-bad gst-plugins-base gst-plugins-good \
     gst-plugins-ugly gnome-disk-utility xdg-user-dirs-gtk \
     chrome-gnome-shell gnome-clocks gnome-weather \
-    devhelp --needed --noconfirm
+    devhelp kvantum-qt5 --needed --noconfirm
 
 sudo systemctl enable gdm

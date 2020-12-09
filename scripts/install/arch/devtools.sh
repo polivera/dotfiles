@@ -12,7 +12,7 @@ sudo pacman -S \
 sudo usermod -aG docker pablo
 
 mkdir $XDG_CONFIG_HOME/npm-global
-npm config set prefix '${XDG_CONFIG_HOME}/npm-global'
+npm config set prefix ${XDG_CONFIG_HOME}'/npm-global'
         
 yay -S jetbrains-toolbox postman-bin visual-studio-code-bin --needed --noconfirm
 

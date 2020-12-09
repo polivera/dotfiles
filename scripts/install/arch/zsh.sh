@@ -9,7 +9,7 @@ sudo pacman -S \
   --needed --noconfirm
 
 yay -S \
-  spaceship-prompt-git zsh-syntax-highlighting-git \
+  spaceship-prompt-git zsh-syntax-highlighting-git autojump-git \
   --needed --noconfirm
 
 rm -R $HOME/.zshrc \

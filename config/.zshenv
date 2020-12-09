@@ -25,3 +25,6 @@ typeset -U PATH path
 path=("$HOME/.local/bin" "$NPM_CONFIG_PREFIX/bin"
   "$GOPATH/bin" "$COMPOSER_PATH/vendor/bin" "$path[@]")
 export PATH
+
+export EDITOR="nvim"
+
