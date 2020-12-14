@@ -1,5 +1,9 @@
 # ls modifications
-alias ls='exa --icons --color always --group-directories-first'
+if [[ -x /usr/bin/exa ]]; then
+  alias ls='exa --icons --color always --group-directories-first'
+else
+  alias ls='ls --color --group-directories-first'
+fi
 alias ll='ls -l'
 alias lt='ls -l --tree --git-ignore'
 alias la='ls -a'
@@ -23,3 +27,6 @@ alias gad='git add'
 alias gac='git add . && git commit'
 alias gst='git status'
 alias gcm='git commit'
+alias gpo='git push origin'
+alias gpu='git push upstream'
+

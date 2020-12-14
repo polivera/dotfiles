@@ -1,4 +1,4 @@
-"^(Navigator|google-chrome|spotify|Mail|firefox)$"
+"^(Navigator|google-chrome|spotify|Mail|firefox|slack)$"
     None, Up, Button4, 3
     None, Down, Button5, 3
 

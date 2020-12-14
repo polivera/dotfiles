@@ -15,15 +15,17 @@ export GOPATH=$XDG_DATA_HOME/go
 export NPM_CONFIG_PREFIX=$XDG_CONFIG_HOME/npm-global
 # PHP composer
 export COMPOSER_PATH=$XDG_CONFIG_HOME/composer
-# Python virtualenv-wrapper
-export WORKON_HOME=$XDG_CONFIG_HOME/virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+# PyEnv
+export PYENV_ROOT=$XDG_CONFIG_HOME/pyenv
 
 # Path
 typeset -U PATH path
-path=("$HOME/.local/bin" "$NPM_CONFIG_PREFIX/bin"
-  "$GOPATH/bin" "$COMPOSER_PATH/vendor/bin" "$path[@]")
+path=(
+  "$HOME/.local/bin"
+  "$NPM_CONFIG_PREFIX/bin"
+  "$GOPATH/bin" 
+  "$COMPOSER_PATH/vendor/bin" 
+  "$path[@]")
 export PATH
 
 export EDITOR="nvim"

@@ -3,7 +3,7 @@
 sudo pacman -S \
   php composer php-sqlite php-xsl xdebug \
   nodejs npm \
-  python python-pip python-virtualenvwrapper \
+  python python-pip pyenv \
   docker docker-compose \
   networkmanager-openconnect openconnect aws-cli \
   jdk-openjdk go gdb --noconfirm --needed
