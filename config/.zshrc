@@ -4,9 +4,6 @@ stty -ixon
 # Include custom shell scripts
 for f in $HOME/.config/shellscripts/*; do source "$f"; done
 
-# Source autojump
-[[ -s /home/pablo/.autojump/etc/profile.d/autojump.sh ]] && source /home/pablo/.autojump/etc/profile.d/autojump.sh
-
 # Enable autocomplete
 autoload -Uz compinit; compinit
 zstyle ':completion:*' menu select
@@ -72,11 +69,7 @@ prompt spaceship
 # ZSH Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-# FZF
-source /usr/share/fzf/key-bindings.zsh 2>/dev/null
-source /usr/share/fzf/completion.zsh 2>/dev/null
-
-# AutoJump
-[[ -s /usr/share/autojump/autojump.zsh ]] && source /usr/share/autojump/autojump.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+load-fzf-plugins
+load-pyenv
+load-nvm
+load-autojump

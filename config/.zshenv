@@ -14,6 +14,8 @@ export GOPATH=$XDG_DATA_HOME/go
 export COMPOSER_PATH=$XDG_CONFIG_HOME/composer
 # PyEnv
 export PYENV_ROOT=$XDG_CONFIG_HOME/pyenv
+# NVM
+export NVM_DIR=$XDG_CONFIG_HOME/nvm
 
 # Path
 typeset -U PATH path
@@ -21,6 +23,7 @@ path=(
   "$HOME/.local/bin"
   "$GOPATH/bin" 
   "$COMPOSER_PATH/vendor/bin" 
+  "$PYENV_ROOT/bin"
   "$path[@]")
 export PATH
 
