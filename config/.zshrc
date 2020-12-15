@@ -32,7 +32,7 @@ bindkey "\e[3~" delete-char
 bindkey "\e[2~" quoted-insert 
 
 # Load Spaceship prompt if it is installed via npm
-[[ -d /home/pablo/.zfunctions ]] && fpath=($fpath "/home/pablo/.zfunctions") && load-nvm
+load-spaceshipt-prompt
 
 # Spaceship theme
 SPACESHIP_PROMPT_ADD_NEWLINE=true
@@ -73,10 +73,13 @@ prompt spaceship
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # FZF
-source /usr/share/fzf/key-bindings.zsh 2>/dev/null
-source /usr/share/fzf/completion.zsh 2>/dev/null
+load-fzf
+
+# Load Pyenv
+load-pyenv
 
 # AutoJump
-[[ -s /usr/share/autojump/autojump.zsh ]] && source /usr/share/autojump/autojump.zsh
+load-autojump
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# NVM (this take a lot of time to load)
+#load-nvm
