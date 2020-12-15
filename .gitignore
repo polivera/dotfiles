@@ -1,5 +1,3 @@
 .vscode
-shellscripts
-!shellscripts/aliases
-!sehllscripts/functions
+
 

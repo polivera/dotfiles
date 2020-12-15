@@ -66,10 +66,8 @@ SPACESHIP_JOBS_SHOW=false
 autoload -U promptinit; promptinit
 prompt spaceship
 
-# ZSH Plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
-load-fzf-plugins
+load-zsh-plugins
+load-fzf
 load-pyenv
 load-nvm
 load-autojump
