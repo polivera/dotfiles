@@ -30,4 +30,4 @@ path=(
   "$path[@]")
 export PATH
 
-export EDITOR="nvim"
+export EDITOR="code"

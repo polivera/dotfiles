@@ -1,11 +1,12 @@
 # ls modifications
 if [[ -x /usr/bin/exa ]]; then
   alias ls='exa --icons --color always --group-directories-first'
+  alias lt='ls -l --tree --git-ignore'
 else
   alias ls='ls --color --group-directories-first'
+  alias lt='tree'
 fi
 alias ll='ls -l'
-alias lt='ls -l --tree --git-ignore'
 alias la='ls -a'
 alias lla='ll -a'
 
