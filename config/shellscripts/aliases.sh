@@ -30,4 +30,3 @@ alias gst='git status'
 alias gcm='git commit'
 alias gpo='git push origin'
 alias gpu='git push upstream'
-
