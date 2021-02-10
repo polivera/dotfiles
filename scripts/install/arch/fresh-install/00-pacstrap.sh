@@ -14,7 +14,7 @@ timedatectl set-ntp true
 # I have to fix this at some point (lazy af)
 pacstrap /mnt \
   base base-devel linux linux-firmware linux-headers \
-  dkms sudo networkmanager \
+  dkms sudo networkmanager amd-ucode \
   grub efibootmgr os-prober ntfs-3g fzf \
   openssh pulseaudio alsa alsa-utils bluez bluez-utils
 

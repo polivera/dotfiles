@@ -27,6 +27,7 @@ sudo pacman -S \
     gnome-usage \
     gnome-todo \
     gnome-disk-utility \
+    gnome-terminal \
     grilo-plugins \
     gvfs \
     gvfs-google \
@@ -64,5 +65,7 @@ sudo pacman -S \
     xorg-twm \
     xorg-xinit \
     --needed --noconfirm
+
+yay -S matcha-gtk-theme tela-icon-theme vimix-cursors --noconfirm
 
 sudo systemctl enable gdm

@@ -16,6 +16,7 @@ export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
 export PYENV_ROOT=$XDG_CONFIG_HOME/pyenv
 # NVM
 export NVM_DIR=$XDG_CONFIG_HOME/nvm
+export NVM_SYMLINK_CURRENT=true
 # AutoJump
 export AUTOJUMP_HOME=$XDG_CONFIG_HOME/autojump
 
@@ -25,9 +26,9 @@ path=(
   "$HOME/.local/bin"
   "$GOPATH/bin" 
   "$PHP_COMPOSER_PATH/vendor/bin" 
-  "$AUTOJUMP_HOME/bin"
+  "$NVM_DIR/current/bin"
   "$PYENV_ROOT/bin"
   "$path[@]")
 export PATH
 
-export EDITOR="code"
+export EDITOR="nvim"

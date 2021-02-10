@@ -12,8 +12,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 yay -S universal-ctags-git --noconfirm
 
-rm -R $XDG_CONFIG_HOME/nvim
-ln -s $DOTFILES_DIR/nvim $XDG_CONFIG_HOME 
+#rm -R $XDG_CONFIG_HOME/nvim
+#ln -s $DOTFILES_DIR/nvim $XDG_CONFIG_HOME 
 
 # Install COC stuff
 if [[ -x /usr/bin/npm ]]; then
