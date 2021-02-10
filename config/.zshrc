@@ -4,6 +4,9 @@ stty -ixon
 # Include custom shell scripts
 for f in $HOME/.config/shellscripts/*; do source "$f"; done
 
+# Autojump
+[[ -s /home/pablo/.autojump/etc/profile.d/autojump.sh ]] && source /home/pablo/.autojump/etc/profile.d/autojump.sh
+
 # Enable autocomplete
 autoload -Uz compinit; compinit
 zstyle ':completion:*' menu select
