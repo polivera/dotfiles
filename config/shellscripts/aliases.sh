@@ -32,5 +32,5 @@ alias gpo='git push origin'
 alias gpu='git push upstream'
 
 # Creact
-alias init-react-app='npm i react react-dom && npm i -D webpack webpack-dev-server html-webpack-plugin @babel/core babel-loader @babel/preset-env @babel/preset-react'
+alias init-react-app='npm i react react-dom && npm i -D webpack webpack-cli webpack-dev-server html-webpack-plugin @babel/core babel-loader @babel/preset-env @babel/preset-react'
 
