@@ -25,8 +25,7 @@ ln -s $CONFIGDIR/.zshenv -T $HOME/.zshenv
 ln -s $CONFIGDIR/.zshrc -T $HOME/.zshrc
 
 echo "## Install nvm ##"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-\. "$NVM_DIR/nvm.sh"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash . "$NVM_DIR/nvm.sh"
 nvm install node
 
 echo "## Install spaceshipt prompt"
@@ -44,9 +43,9 @@ cd $XDG_CONFIG_HOME/fzf && ./install
 echo "## Install pyenv"
 git clone https://github.com/pyenv/pyenv.git $PYENV_ROOT
 
-echo "## Install autojump"
-git clone git://github.com/wting/autojump.git $HOME/autojump
-cd $HOME/autojump && ./install.py
-mv $HOME/.autojump $XDG_CONFIG_HOME/autojump
-cd $HOME
-rm -Rf $HOME/autojump
+# echo "## Install autojump"
+# git clone git://github.com/wting/autojump.git $HOME/autojump
+# cd $HOME/autojump && ./install.py
+# mv $HOME/.autojump $XDG_CONFIG_HOME/autojump
+# cd $HOME
+# rm -Rf $HOME/autojump

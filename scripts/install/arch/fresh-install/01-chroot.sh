@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Customization variables
+MACHINE_NAME=otrave
+BOOT_DIRECTORY=/boot/efi
+# End customization
+
+
 ln -sf /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
 hwclock --systohc
 
@@ -19,22 +25,9 @@ else
   echo '' >> /etc/hosts
   echo '127.0.0.1    localhost' >> /etc/hosts
   echo '::1          localhost' >> /etc/hosts
-	# Hostname and hosts
-	if [[ "$1" != "--notebook" ]]; then
-	  echo 'otrave' > /etc/hostname
-	  echo '127.0.1.1    otrave otrave.localhost' >> /etc/hosts
-	else
-	  echo 'mini-otrave' > /etc/hostname
-	  echo '127.0.1.1    mini-otrave mini-otrave.localhost' >> /etc/hosts
-	fi
+  echo "${MACHINE_NAME}" > /etc/hostname
+  echo "127.0.1.1    ${MACHINE_NAME} ${MACHINE_NAME}.localhost" >> /etc/hosts
 fi
-
-if [[ "$1" != "--notebook" ]]; then
-  pacman -S amd_ucode
-else
-  pacman -S intel_ucode
-fi
-
 
 # init
 mkinitcpio -P
@@ -48,14 +41,9 @@ useradd -m pablo -G wheel
 passwd pablo
 
 cp /etc/sudoers /etc/sudoers.back
-if [[ "$1" != "--notebook" ]]; then
-  echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
-  grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
-else
-  echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
-  grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-fi
+echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
+grub-install --target=x86_64-efi --efi-directory=$BOOT_DIRECTORY --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Enable NM

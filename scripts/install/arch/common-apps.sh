@@ -1,8 +1,9 @@
 #!/bin/bash
 
 sudo pacman -S \
-  vlc keepassxc qbittorrent \
+  vlc qbittorrent \
   imwheel firefox rclone 
   exa bat \
   --needed --noconfirm
 
+yay -S google-chrome

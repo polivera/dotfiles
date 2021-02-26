@@ -6,6 +6,24 @@ CONFIGPATH=$SRC_CONF_FOLDER/dotfiles/config
 SCRIPTPATH=$SRC_CONF_FOLDER/dotfiles/scripts
 
 echo '[Creating folders]'
+# Create folders in case they not exist
+mkdir -p $SRC_CONF_FOLDER/Documents \
+         $SRC_CONF_FOLDER/Downloads \
+         $SRC_CONF_FOLDER/Music \
+         $SRC_CONF_FOLDER/Pictures \
+         $SRC_CONF_FOLDER/Templates \
+         $SRC_CONF_FOLDER/Videos \
+         $SRC_HOME_FOLDER \
+         $SRC_CONF_FOLDER/ssh \
+         $SRC_THEME_FOLDER/themes \
+         $SRC_THEME_FOLDER/icons \
+         $SRC_THEME_FOLDER/extensions \
+         $HOME/.config \
+         $HOME/.local/share/gnome-shell \
+         > /dev/null 2>&1
+
+[ ! -d "${SRC_CONF_FOLDER}/dotfiles" ] && git clone https://github.com/polivera/dotfiles.git $SRC_CONF_FOLDER/dotfiles
+
 rm -R $HOME/Documents \
       $HOME/Downloads \
       $HOME/Music \
@@ -19,10 +37,6 @@ rm -R $HOME/Documents \
       $HOME/.local/share/icons \
       $HOME/.local/share/gnome-shell/extensions \
       > /dev/null 2>&1
-
-# Create necesary folders
-mkdir $HOME/.config > /dev/null 2>&1
-mkdir -p $HOME/.local/share/gnome-shell > /dev/null 2>&1
 
 # Adding links
 ln -s $SRC_HOME_FOLDER/Documents $HOME
