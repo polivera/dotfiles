@@ -28,7 +28,6 @@ ln -s $SRC_HOME_FOLDER/Videos $HOME
 ln -s $SRC_CONF_FOLDER/ssh -T $HOME/.ssh
 mkdir $HOME/.config > /dev/null 2>&1
 ln -s $SRC_CONF_FOLDER/dotfiles $HOME/.config/dotfiles
-#mkdir -p $HOME/.local/share/gnome-shell > /dev/null 2>&1
 ln -s $SRC_THEME_FOLDER/themes -T $HOME/.local/share/themes
 ln -s $SRC_THEME_FOLDER/icons -T $HOME/.local/share/icons
 ln -s $SRC_THEME_FOLDER/extensions -T $HOME/.local/share/gnome-shell/extensions

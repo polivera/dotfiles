@@ -17,6 +17,7 @@ echo 'es_AR.UTF-8 UTF-8' >> /etc/locale.gen
 locale-gen
 echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 
+echo "${MACHINE_NAME}" > /etc/hostname
 # Link hosts
 if [[ -f /mnt/data/system/hosts ]]; then
   rm /etc/hosts
@@ -25,7 +26,6 @@ else
   echo '' >> /etc/hosts
   echo '127.0.0.1    localhost' >> /etc/hosts
   echo '::1          localhost' >> /etc/hosts
-  echo "${MACHINE_NAME}" > /etc/hostname
   echo "127.0.1.1    ${MACHINE_NAME} ${MACHINE_NAME}.localhost" >> /etc/hosts
 fi
 

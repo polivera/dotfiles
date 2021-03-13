@@ -2,14 +2,14 @@
 
 echo 'Installing zsh'
 
-source ./.env.sh
+source ./env.sh
 
 sudo pacman -S \
   zsh exa fzf \
   --needed --noconfirm
 
 yay -S \
-  spaceship-prompt-git zsh-syntax-highlighting-git autojump-git \
+  spaceship-prompt-git zsh-syntax-highlighting-git \
   --needed --noconfirm
 
 rm -R $HOME/.zshrc \

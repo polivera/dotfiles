@@ -73,7 +73,6 @@ load-zsh-plugins
 load-fzf
 load-pyenv
 load-nvm
-# load-autojump
 fpath=($fpath "/home/pablo/.zfunctions")
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -15,10 +15,6 @@ function load-nvm {
   fi
 }
 
-function load-autojump {
-  # [ -s $XDG_CONFIG_HOME/autojump/etc/profile.d/autojump.sh ] && source $XDG_CONFIG_HOME/autojump/etc/profile.d/autojump.sh
-}
-
 function load-fzf {
   [ -f $XDG_CONFIG_HOME/fzf/.fzf.zsh ] && source $XDG_CONFIG_HOME/fzf/.fzf.zsh
   [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh

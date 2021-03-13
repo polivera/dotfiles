@@ -5,24 +5,27 @@ SRC_THEME_FOLDER=/mnt/data/pablo/Theme
 CONFIGPATH=$SRC_CONF_FOLDER/dotfiles/config
 SCRIPTPATH=$SRC_CONF_FOLDER/dotfiles/scripts
 
+XDG_CONFIG_HOME=/home/pablo/.config
+XDG_DATA_HOME=/home/pablo/.local/share
+
 echo '[Creating folders]'
 # Create folders in case they not exist
-mkdir -p $SRC_CONF_FOLDER/Documents \
-         $SRC_CONF_FOLDER/Downloads \
-         $SRC_CONF_FOLDER/Music \
-         $SRC_CONF_FOLDER/Pictures \
-         $SRC_CONF_FOLDER/Templates \
-         $SRC_CONF_FOLDER/Videos \
-         $SRC_HOME_FOLDER \
+mkdir -p $SRC_HOME_FOLDER/Documents \
+         $SRC_HOME_FOLDER/Downloads \
+         $SRC_HOME_FOLDER/Music \
+         $SRC_HOME_FOLDER/Pictures \
+         $SRC_HOME_FOLDER/Templates \
+         $SRC_HOME_FOLDER/Videos \
          $SRC_CONF_FOLDER/ssh \
          $SRC_THEME_FOLDER/themes \
          $SRC_THEME_FOLDER/icons \
          $SRC_THEME_FOLDER/extensions \
          $HOME/.config \
          $HOME/.local/share/gnome-shell \
+         $HOME/.local/share/fonts \
          > /dev/null 2>&1
 
-[ ! -d "${SRC_CONF_FOLDER}/dotfiles" ] && git clone https://github.com/polivera/dotfiles.git $SRC_CONF_FOLDER/dotfiles
+[[ ! -d "${SRC_CONF_FOLDER}/dotfiles" ]] && git clone https://github.com/polivera/dotfiles.git $SRC_CONF_FOLDER/dotfiles
 
 rm -R $HOME/Documents \
       $HOME/Downloads \
@@ -74,7 +77,7 @@ ln -s $CONFIGPATH/shellscripts $XDG_CONFIG_HOME
 ln -s $SCRIPTPATH/bin $HOME/.local/
 ln -s $CONFIGPATH/systemd $XDG_CONFIG_HOME
 ln -s $CONFIGPATH/tmux $XDG_CONFIG_HOME
-ln -s $BASEPATH/fonts $XDG_DATA_HOME
-ln -s $BASEPATH/.imwheelrc $HOME
-ln -s $BASEPATH/.zshenv $HOME
-ln -s $BASEPATH/.zshrc $HOME
+ln -s $CONFIGPATH/fonts $XDG_DATA_HOME
+ln -s $CONFIGPATH/.imwheelrc $HOME
+ln -s $CONFIGPATH/.zshenv $HOME
+ln -s $CONFIGPATH/.zshrc $HOME

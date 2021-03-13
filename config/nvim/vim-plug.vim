@@ -3,27 +3,13 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin(stdpath('data') . '/plugged')
 
-" Themes
-Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
-
-" Conquer of completion
-Plug 'neoclide/coc.nvim'
-
-" FZF
+" Fuzzy Finder
+" https://github.com/junegunn/fzf.vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
+" https://github.com/gfanto/fzf-lsp.nvim
+Plug 'gfanto/fzf-lsp.nvim'
 
-" Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" CSS color
-Plug 'ap/vim-css-color'
-
-" JSX syntax highligh
-Plug 'mxw/vim-jsx'
 
 " Initialize plugin system
 call plug#end()

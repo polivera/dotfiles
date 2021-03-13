@@ -66,6 +66,6 @@ sudo pacman -S \
     xorg-xinit \
     --needed --noconfirm
 
-yay -S matcha-gtk-theme tela-icon-theme vimix-cursors --noconfirm
+yay -S vimix-cursors --noconfirm
 
 sudo systemctl enable gdm
