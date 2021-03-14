@@ -53,3 +53,13 @@ nnoremap <silent> ne :Buffers<CR>
 nnoremap <silent> fa :Ag 
 " Search in current file
 nnoremap <silent> <C-f> :BLines<CR>
+
+" ================================================
+" ______            _____             
+" |  ___|          |_   _|            
+" | |_ ___ _ __ _ __ | |_ __ ___  ___ 
+" |  _/ _ \ '__| '_ \| | '__/ _ \/ _ \
+" | ||  __/ |  | | | | | | |  __/  __/
+" \_| \___|_|  |_| |_\_/_|  \___|\___|
+" ================================================
+noremap <silent> <C-b> :Fern . -drawer -toggle -reveal=%<CR>
