@@ -17,18 +17,33 @@ Plug 'tpope/vim-commentary'
 " File explorer
 " https://github.com/antoinemadec/FixCursorHold.nvim
 Plug 'antoinemadec/FixCursorHold.nvim'
-" https://github.com/lambdalisue/fern.vim
+" https://github.com/lambdalisue/fern.vim (dirtree)
 Plug 'lambdalisue/fern.vim'
-" https://github.com/lambdalisue/nerdfont.vim
+" https://github.com/lambdalisue/nerdfont.vim (icons)
 Plug 'lambdalisue/nerdfont.vim'
-" https://github.com/lambdalisue/fern-renderer-nerdfont.vim
+" https://github.com/lambdalisue/fern-renderer-nerdfont.vim (render icons on dirtree)
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-" https://github.com/lambdalisue/fern-git-status.vim
+" https://github.com/lambdalisue/fern-git-status.vim (show git status of files)
 Plug 'lambdalisue/fern-git-status.vim'
 
 " Status-line
+" https://github.com/glepnir/galaxyline.nvim (show status line)
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+" https://github.com/kyazdani42/nvim-web-devicons (show icons on statusline)
 Plug 'kyazdani42/nvim-web-devicons' " icons (lua)
+
+" Git
+" https://github.com/airblade/vim-gitgutter (git status info for each line)
+Plug 'airblade/vim-gitgutter'
+" https://github.com/tpope/vim-fugitive (git commands)
+Plug 'tpope/vim-fugitive'
+" https://github.com/tpope/vim-rhubarb (use GBrowser to go to the repo page)
+Plug 'tpope/vim-rhubarb'
+" https://github.com/junegunn/gv.vim (git commit browser)
+Plug 'junegunn/gv.vim'
+" https://github.com/rhysd/git-messenger.vim (reveal commit messages)
+Plug 'rhysd/git-messenger.vim'
+
 
 " Initialize plugin system
 call plug#end()

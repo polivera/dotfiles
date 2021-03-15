@@ -33,6 +33,12 @@ inoremap jk <Esc>
 " Save
 nnoremap <silent> <C-s> :w<CR>
 
+" Tabs
+nnoremap <silent> tn :tabnew<CR>
+nnoremap <silent> tj :tabprevious<CR>
+nnoremap <silent> tk :tabnext<CR>
+nnoremap <silent> tq :q<CR>
+
 " ================================================
 "   ______ ____________ 
 "   |  ___|___  /|  ___|
