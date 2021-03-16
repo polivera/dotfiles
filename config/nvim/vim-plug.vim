@@ -44,6 +44,28 @@ Plug 'junegunn/gv.vim'
 " https://github.com/rhysd/git-messenger.vim (reveal commit messages)
 Plug 'rhysd/git-messenger.vim'
 
+" Move around
+" https://github.com/unblevable/quick-scope
+Plug 'unblevable/quick-scope'
+" https://github.com/easymotion/vim-easymotion 
+Plug 'easymotion/vim-easymotion'
+
+" Auto-pair
+" https://github.com/jiangmiao/auto-pairs
+Plug 'jiangmiao/auto-pairs'
+
+" Color-pair
+" https://github.com/p00f/nvim-ts-rainbow
+Plug 'p00f/nvim-ts-rainbow'
+
+" Tree-sitter (Parser)
+" https://github.com/tree-sitter/tree-sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Color scheme
+" https://github.com/ChristianChiarulli/nvcode-color-schemes.vim
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
+
 
 " Initialize plugin system
 call plug#end()

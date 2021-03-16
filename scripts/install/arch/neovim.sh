@@ -4,7 +4,7 @@ source ./env.sh
 
 echo 'Installing neovim'
 
-sudo pacman -S neovim python-pynvim fzf ripgrep the_silver_searcher fd xclip bat --needed --noconfirm
+sudo pacman -S neovim python-pynvim fzf ripgrep the_silver_searcher fd xclip bat lua --needed --noconfirm
 
 echo 'Install vim-plug'
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

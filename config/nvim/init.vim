@@ -20,9 +20,18 @@ source $XDG_CONFIG_HOME/nvim/plugins/vim-commentary.vim
 " ferntree
 source $XDG_CONFIG_HOME/nvim/plugins/ferntree.vim
 
+" Quick Scope
+source $XDG_CONFIG_HOME/nvim/plugins/quick-scope.vim
+
+" nvcode-color-schemes 
+source $XDG_CONFIG_HOME/nvim/plugins/nvcode-color-schemes.vim
+luafile $XDG_CONFIG_HOME/nvim/lua/plugins/nvcode-color-schemes.lua
+
 " Galaxy status line
 luafile $XDG_CONFIG_HOME/nvim/lua/plugins/galaxyline.lua
 
+" TS Rainbow
+luafile $XDG_CONFIG_HOME/nvim/lua/plugins/nvim-ts-rainbow.lua
 
 "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 " Configuration by filetype
@@ -30,3 +39,4 @@ luafile $XDG_CONFIG_HOME/nvim/lua/plugins/galaxyline.lua
 
 " PHP
 source $HOME/.config/nvim/defaults/filetype/php.vim
+

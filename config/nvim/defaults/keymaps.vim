@@ -1,4 +1,3 @@
-
 " ================================================
 "   ______                
 "   | ___ \               
@@ -11,8 +10,8 @@
 " Basic Key Mappings
 " g Leader key
 let mapleader=" "
-" let localleader=" "
-" nnoremap <Space> <Nop>
+"let localleader=" "
+nnoremap <Space> <Nop>
 
 " Better indenting
 vnoremap < <gv
@@ -68,4 +67,5 @@ nnoremap <silent> <C-f> :BLines<CR>
 " | ||  __/ |  | | | | | | |  __/  __/
 " \_| \___|_|  |_| |_\_/_|  \___|\___|
 " ================================================
-noremap <silent> <C-b> :Fern . -drawer -toggle -reveal=%<CR>
+noremap <silent> <leader>b :Fern . -drawer -toggle -reveal=%<CR>
+
