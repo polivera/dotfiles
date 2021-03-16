@@ -66,6 +66,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " https://github.com/ChristianChiarulli/nvcode-color-schemes.vim
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 
+" Start screen
+" https://github.com/mhinz/vim-startify
+Plug 'mhinz/vim-startify'
 
 " Initialize plugin system
 call plug#end()

@@ -41,7 +41,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set relativenumber                      " Line number relative to your current position
 
-" au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
