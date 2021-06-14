@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /home/pablo/.config/git/gitignore_global
 	filemode = false
+	autocrlf = true
 [pull]
 	rebase = false
 [init]

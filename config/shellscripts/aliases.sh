@@ -1,5 +1,5 @@
 # ls modifications
-if [[ -x /usr/bin/exa ]]; then
+if [[ -x /usr/bin/exa ]] || [[ -x $CARGO_PATH/bin/exa ]]; then
   alias ls='exa --icons --color always --group-directories-first'
   alias lt='ls -l --tree --git-ignore'
 else
@@ -24,7 +24,7 @@ alias opc-csd='sudo openconnect --csd-wrapper=/usr/lib/openconnect/csd-post.sh'
 alias opc='sudo openconnect'
 
 # git
-alias gad='git add'
+alias gad='git add .'
 alias gac='git add . && git commit'
 alias gst='git status'
 alias gcm='git commit'
