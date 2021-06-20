@@ -1,0 +1,13 @@
+[Desktop Entry]
+Icon=/home/pablo/.config/dotfiles/scripts/bin/icons/onedrive-1.svg
+Exec=/home/pablo/.config/dotfiles/scripts/bin/mount-onedrive
+Version=1.0
+Type=Application
+Categories=Development
+Name=Mount Onedrive
+Terminal=false
+X-GNOME-Autostart-enabled=true
+StartupNotify=false
+X-GNOME-Autostart-Delay=10
+X-MATE-Autostart-Delay=10
+X-KDE-autostart-after=panel

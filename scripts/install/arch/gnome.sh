@@ -46,7 +46,6 @@ sudo pacman -S \
     gst-plugins-good \
     gst-plugins-ugly \
     xdg-user-dirs-gtk \
-    chrome-gnome-shell \
     gnome-clocks \
     gnome-weather \
     devhelp \
@@ -65,7 +64,5 @@ sudo pacman -S \
     xorg-twm \
     xorg-xinit \
     --needed --noconfirm
-
-yay -S vimix-cursors --noconfirm
 
 sudo systemctl enable gdm

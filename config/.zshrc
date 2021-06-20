@@ -20,16 +20,16 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # Key bindings
 # ctrl+{left, right}
-bindkey "\e[1;5C" forward-word
-bindkey "\e[1;5D" backward-word
-# Home
-bindkey "\e[1~" beginning-of-line
-# end
-bindkey "\e[4~" end-of-line
-# del
-bindkey "\e[3~" delete-char
-# insert
-bindkey "\e[2~" quoted-insert 
+# bindkey "\e[1;5C" forward-word
+# bindkey "\e[1;5D" backward-word
+# # Home
+# bindkey "\e[1~" beginning-of-line
+# # end
+# bindkey "\e[4~" end-of-line
+# # del
+# bindkey "\e[3~" delete-char
+# # insert
+# bindkey "\e[2~" quoted-insert 
 
 # Load Spaceship prompt if it is installed via npm
 load-spaceshipt-prompt

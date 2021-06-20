@@ -16,7 +16,6 @@ sudo pacman -S nvidia \
     lib32-mesa-demos \
     lib32-nvidia-utils \
     libcanberra \
-    libcanberra-gstreamer \
     libcanberra-pulse \
     libva-vdpau-driver --needed --noconfirm
 

@@ -2,6 +2,7 @@
 
 function load-pyenv {
   if [[ -s /usr/bin/pyenv || -d $PYENV_ROOT/bin ]]; then
+    eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
   fi
 }

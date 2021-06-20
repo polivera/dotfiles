@@ -1,8 +1,28 @@
-"^(Navigator|google-chrome|spotify|Mail|firefox|Slack)$"
+"^Navigator"
     None, Up, Button4, 3
     None, Down, Button5, 3
-
-"^.*$"
+"^google-chrome"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^brave-browser"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^Brave-browser"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^firefox"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^spotify"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^Slack"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^Navigator"
+    None, Up, Button4, 3
+    None, Down, Button5, 3
+"^.*"
     None, Up, Button4
     None, Down, Button5
     Control_L, Up, Control_L|Button4

@@ -10,7 +10,7 @@ export HISTFILE=$XDG_CACHE_HOME/zsh_history
 
 # GOLang
 export GOPATH=$XDG_DATA_HOME/go
-# export GOROOT=/usr/local/go
+export GOROOT=/usr/lib/go
 
 # PHP composer
 export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
@@ -27,7 +27,7 @@ typeset -U PATH path
 path=(
   "$HOME/.local/bin"
   "$GOPATH/bin"
-#  "$GOROOT/bin"
+  "$GOROOT/bin"
   "$PHP_COMPOSER_PATH/vendor/bin"
   "$NVM_DIR/current/bin"
   "$PYENV_ROOT/bin"

@@ -2,7 +2,7 @@
 
 sudo pacman -Syu
 sudo pacman -S base-devel udiskie udisks2 usbutils git \
-    pacman-contrib go htop --needed --noconfirm
+    pacman-contrib go delve htop --needed --noconfirm
 
 echo "Installing yay"
 cd ~
@@ -17,4 +17,3 @@ yay -S aic94xx-firmware wd719x-firmware \
 
 sudo mkinitcpio -P
 
-../zsh.sh

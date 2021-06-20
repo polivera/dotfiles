@@ -48,6 +48,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # Enable NM
 systemctl enable NetworkManager
+systemctl enable bluetooth
 
 sed -i 's/#Color/Color/g' /etc/pacman.conf
 
