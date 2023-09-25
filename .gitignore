@@ -1,0 +1,13 @@
+*.uuid
+/systemd/user/*
+!/systemd/user/*.service
+/neovim/neovim
+/nvim/plugin
+/zsh/.zshrc
+
+zsh/.zsh_sessions/*
+lazygit/state.yml
+
+tmux/plugins
+
+.DS_Store

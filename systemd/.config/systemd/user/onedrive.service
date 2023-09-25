@@ -1,0 +1,13 @@
+[Unit]
+Description=IMWheel
+Wants=gdm.service
+After=gdm.service
+
+[Service]
+Type=simple
+ExecStart=rclone --vfs-cache-mode full mount OneDrivePersonal:/ /home/pablo/OneDrive 
+ExecStop=/usr/bin/pkill rclone
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
