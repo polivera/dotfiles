@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
-mkdir $HOME/.config 2&>/dev/null
-mkdir $HOME/.local 2&>/dev/null
+mkdir $HOME/.config > /dev/null 2>&1
+mkdir $HOME/.local > /dev/null 2>&1
 
 # Git config
 echo "Linking Git"
