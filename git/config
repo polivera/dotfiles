@@ -4,6 +4,7 @@
 [core]
   excludesfile = ~/.config/git/gitignore
 
+	autocrlf = true
 [url "git@github.com:"]
   insteadOf = https://github.com/
 
@@ -15,4 +16,3 @@
 
 [includeIf "gitdir:~/Projects/Work/"]
   path = ~/.config/git/work/git.work.config
-

@@ -31,3 +31,15 @@ ln -s $SCRIPTPATH/bin -T $HOME/.local/bin
 echo "Linking Kitty"
 rm -rf $HOME/.config/kitty
 ln -s  $SCRIPTPATH/kitty -T $HOME/.config/kitty
+
+# Linking Ideavim
+echo "Linking IdeaVim"
+rm $HOME/.ideavimrc
+ln -s $SCRIPTPATH/ideavim/.ideavimrc -T $HOME/.ideavimrc
+
+# Linking Chromium/Chrome
+echo "Linking Chromium/Chrome"
+rm $HOME/.config/chromium-flags.conf
+rm $HOME/.config/chrome-flags.conf
+ln -s $SCRIPTPATH/chromium/chromium-flags.conf -T $HOME/.config/chromium-flags.conf
+ln -s $SCRIPTPATH/chromium/chromium-flags.conf -T $HOME/.config/chrome-flags.conf
