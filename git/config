@@ -4,10 +4,6 @@
 [core]
   excludesfile = ~/.config/git/gitignore
 
-	autocrlf = true
-[url "git@github.com:"]
-  insteadOf = https://github.com/
-
 ; [remote "origin"]
 ;   fetch = +refs/heads/*:refs/remotes/origin/*
 
