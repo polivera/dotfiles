@@ -68,6 +68,7 @@ function check_os() {
   esac
 
   export POLI_OS_NAME
+  export POLI_OS_TYPE
 }
 
 # Mount OneDrive Storage

@@ -24,9 +24,8 @@ macos)
 	source /opt/homebrew/Cellar/fzf/*/shell/key-bindings.zsh
 	;;
 wsl) # This means WSL
-	eval "$(ssh-agent)" &>/dev/null
-  # source /usr/share/doc/fzf/examples/key-bindings.zsh
-	source /usr/share/fzf/key-bindings.zsh
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+	# eval "$(ssh-agent)" &>/dev/null
 	# ssh-add ~/.ssh/* 2 &>/dev/null
 	;;
 *)
