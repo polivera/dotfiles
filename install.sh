@@ -6,8 +6,10 @@ mkdir $HOME/.local > /dev/null 2>&1
 
 # Git config
 echo "Linking Git"
-rm -rf $HOME/.config/git
-ln -s  $SCRIPTPATH/git -T $HOME/.config/git
+rm -rf $HOME/.gitconfig
+rm -rf $HOME/.git
+ln -s  $SCRIPTPATH/git/.gitconfig -T $HOME/.gitconfig
+ln -s  $SCRIPTPATH/git/git -T $HOME/.config/.git
 
 # Link ZSH
 echo "Linking ZSH"

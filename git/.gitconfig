@@ -1,0 +1,15 @@
+[init]
+  defaultBranch = main
+
+[core]
+  excludesfile = ~/git/global_ignore
+
+[includeIf "gitdir:~/Projects/Personal/"]
+  path = ~/.git/personal/.gitconfig
+
+[includeIf "gitdir:~/WinProjects/Personal/"]
+  path = ~/.git/win-personal/.gitconfig
+
+[includeIf "gitdir:~/Projects/S4L/"]
+  path = ~/.git/work/.gitconfig
+

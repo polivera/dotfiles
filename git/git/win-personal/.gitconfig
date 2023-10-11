@@ -1,0 +1,15 @@
+[init]
+	defaultBranch = main
+[user]
+	name = polivera
+	email = punk.moon2229@fastmail.com
+	signingkey = CE3906A1F2E09BD0
+[commit]
+	gpgsign = true
+[gpg]
+	program = "C:/Program Files (x86)/GnuPG/bin/gpg.exe"
+[core]
+	filemode = false
+[pull]
+	rebase = false
+
