@@ -8,11 +8,11 @@
   insteadOf = https://github.com/
 
 [includeIf "gitdir:~/Projects/Personal/"]
-  path = ~/.git/personal/.gitconfig
+  path = ~/.config/git/personal/config
 
 [includeIf "gitdir:~/WinProjects/Personal/"]
-  path = ~/.git/win-personal/.gitconfig
+  path = ~/.config/git/win-personal/config
 
 [includeIf "gitdir:~/Projects/S4L/"]
-  path = ~/.git/work/.gitconfig
+  path = ~/.config/git/work/s4l.config
 
