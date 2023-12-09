@@ -45,9 +45,8 @@ export RUSTUP_HOME=$XDG_CONFIG_HOME/rustup
 export CARGO_HOME=$XDG_CONFIG_HOME/cargo
 # Java
 export SDKMAN_DIR=$XDG_CONFIG_HOME/sdkman
-# GVM - https://github.com/moovweb/gvm
-export GVM_DIR=$HOME/.gvm
-export GOROOT_BOOTSTRAP=$GVM_DIR/gos/go1.4
+# Jetbrains
+export JETBRAINS_APPS=$XDG_DATA_HOME/JetBrains/Toolbox/scripts
 
 # Path
 PATH=$PATH:"$GOPATH/bin"
@@ -57,9 +56,5 @@ PATH=$PATH:"$PYENV_ROOT/bin"
 PATH=$PATH:"$CARGO_HOME/bin"
 PATH=$PATH:"$HOME/.local/bin"
 PATH=$PATH:"$BREW_PATH/bin"
-
-# Add neovim lsp servers to Path
-if [[ -d $HOME/.local/share/nvim/mason/bin ]]; then
-  PATH=$PATH:"$HOME/.local/share/nvim/mason/bin"
-fi
+PATH=$PATH:"$JETBRAINS_APPS"
 
