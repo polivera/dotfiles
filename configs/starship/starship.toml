@@ -13,6 +13,7 @@ format = '[$symbol](bold white)  '
 disabled = false
 
 [os.symbols]
+Fedora = ''
 Windows = ''
 Arch = '󰣇'
 Ubuntu = ''

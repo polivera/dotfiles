@@ -14,4 +14,4 @@
   path = ~/.config/git/win-personal/config
 
 [includeIf "gitdir:~/Projects/S4L/"]
-  path = ~/.config/git/work/s4l.config
+  path = ~/.config/git/work/config
