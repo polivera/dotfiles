@@ -62,3 +62,4 @@
 ;; Load Plugins
 (load "~/.config/emacs/plugins/evil.el")
 (load "~/.config/emacs/plugins/vertico.el")
+(load "~/.config/emacs/plugins/marginalia.el")
