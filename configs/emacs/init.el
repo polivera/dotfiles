@@ -55,3 +55,10 @@
   (setq elpaca-use-package-by-default t))
   ;; Block until current queue processed.
 (elpaca-wait)
+
+;; Load Basic Configurations
+(load "~/.config/emacs/basic-config.el")
+
+;; Load Plugins
+(load "~/.config/emacs/plugins/evil.el")
+(load "~/.config/emacs/plugins/vertico.el")
