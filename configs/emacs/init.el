@@ -58,8 +58,18 @@
 
 ;; Load Basic Configurations
 (load "~/.config/emacs/basic-config.el")
+(load "~/.config/emacs/fonts.el")
 
 ;; Load Plugins
 (load "~/.config/emacs/plugins/evil.el")
 (load "~/.config/emacs/plugins/vertico.el")
 (load "~/.config/emacs/plugins/marginalia.el")
+(load "~/.config/emacs/plugins/orderless.el")
+(load "~/.config/emacs/plugins/consult.el")
+
+(load "~/.config/emacs/plugins/doom-modeline.el")
+
+(load "~/.config/emacs/plugins/themes.el")
+;; These two files should be loaded last
+(load "~/.config/emacs/plugins/which-key.el")
+(load "~/.config/emacs/plugins/general.el")

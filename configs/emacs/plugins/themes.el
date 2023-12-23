@@ -1,0 +1,5 @@
+;; Doom themes
+(use-package doom-themes
+  :demand t
+  :config
+  (load-theme 'doom-gruvbox t))
