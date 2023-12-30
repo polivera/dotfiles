@@ -73,8 +73,8 @@ nmap <leader>c <Action>(Unsplit)
 
 " Find stuff ------------------------------------------------------------------
 map <leader>ff <Action>(GotoFile)
-nmap <leader>fg <Action>(FindInPath)
-nmap <leader>fb <Action>(Switcher)
+nmap <leader>fj <Action>(FindInPath)
+nmap <leader>fu <Action>(Switcher)
 
 " Language related shortcuts --------------------------------------------------
 nmap <leader>ld <Action>(GotoDeclaration)
