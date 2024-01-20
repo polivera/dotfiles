@@ -1,6 +1,6 @@
 # Use custom format
 format = '''
-$os$directory$git_branch$git_status$php
+$os$directory$git_branch$git_status$php$python
 $character'''
 
 # Inserts a blank line between shell prompts
@@ -19,6 +19,7 @@ Arch = '󰣇'
 Ubuntu = ''
 Macos = '󰀵'
 Debian = ''
+
 # ----------------------------------------------------------------
 # Shows current directory
 [directory]
@@ -37,3 +38,8 @@ success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being
 
 [docker_context]
 format = "via [🐋 $context](blue bold)"
+
+[python]
+symbol=' '
+python_binary=['./venv/bin/python', 'python', 'python3', 'python2']
+format="via [$symbol ${version}](blue) [${virtualenv}](yellow)"
