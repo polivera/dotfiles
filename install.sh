@@ -1,47 +1,145 @@
 #!/usr/bin/env bash
 
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
-mkdir $HOME/.config > /dev/null 2>&1
-mkdir $HOME/.local > /dev/null 2>&1
 
-# Git config
-echo "Linking Git"
-rm -rf $HOME/.gitconfig
-rm -rf $HOME/.git
-ln -s  $SCRIPTPATH/git/.gitconfig -T $HOME/.gitconfig
-ln -s  $SCRIPTPATH/git/git -T $HOME/.config/.git
+###########################################################
+# Create base folders in the home directory
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function create_base_folders() {
+    echo "Create base folders"
+    mkdir $HOME/.config > /dev/null 2>&1
+    mkdir $HOME/.local > /dev/null 2>&1
+}
 
-# Link ZSH
-echo "Linking ZSH"
-rm -rf $HOME/.config/zsh
-rm $HOME/.zshrc 2&>/dev/null
-rm $HOME/.zshenv
-ln -s  $SCRIPTPATH/zsh -T $HOME/.config/zsh
-ln -s  $SCRIPTPATH/zsh/.zshenv -T $HOME/.zshenv
+###########################################################
+# Link Git configuration folder
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_git_config_file() {
+    echo "Linking Git config folder"
+    rm -rf $HOME/.config/git
+    ln -s  $SCRIPTPATH/configs/git -T $HOME/.config/git
+}
 
-# Link TMux
-echo "Linking TMux"
-rm -rf $HOME/.config/tmux
-ln -s  $SCRIPTPATH/tmux -T $HOME/.config/tmux
+###########################################################
+# Link ZSH Configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_zsh_configs() {
+    echo "Linking ZSH"
+    rm -rf $HOME/.config/zsh
+    rm $HOME/.zshrc 2&>/dev/null
+    rm $HOME/.zshenv
+    ln -s  $SCRIPTPATH/configs/zsh -T $HOME/.config/zsh
+    ln -s  $HOME/.config/zsh/.zshenv -T $HOME/.zshenv
+}
 
-# Link Scripts
-echo "Linking Scripts"
-rm -rf $HOME/.local/bin
-ln -s $SCRIPTPATH/bin -T $HOME/.local/bin
+###########################################################
+# Link Tmux Configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_tmux_config() {
+    echo "Linking tmux"
+    rm -rf $HOME/.config/tmux
+    ln -s  $SCRIPTPATH/configs/tmux -T $HOME/.config/tmux
+    if [[ ! -d $HOME/.config/tmux/plugins/tpm ]]; then
+        echo "Installing TPM"
+        git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
+    fi
+}
 
-# Link Kitty
-echo "Linking Kitty"
-rm -rf $HOME/.config/kitty
-ln -s  $SCRIPTPATH/kitty -T $HOME/.config/kitty
+###########################################################
+# Link Personal Scripts Folder
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_personal_scripts() {
+    # Link Scripts
+    echo "Linking Scripts"
+    rm -rf $HOME/.local/scripts
+    ln -s $SCRIPTPATH/configs/scripts -T $HOME/.local/scripts
+}
 
-# Linking Ideavim
-echo "Linking IdeaVim"
-rm $HOME/.ideavimrc
-ln -s $SCRIPTPATH/ideavim/.ideavimrc -T $HOME/.ideavimrc
+###########################################################
+# Install Starship for zsh
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function install_starship_shell() {
+    if command -v starship &>/dev/null; then
+        echo "Starship already installed"
+    else
+        echo "Install starship shell"
+        curl -sS https://starship.rs/install.sh | sh
+        ln -s $SCRIPTPATH/configs/starship/starship.toml -T $HOME/.config/starship.toml
+    fi
+}
 
-# Linking Chromium/Chrome
-echo "Linking Chromium/Chrome"
-rm $HOME/.config/chromium-flags.conf
-rm $HOME/.config/chrome-flags.conf
-ln -s $SCRIPTPATH/chromium/chromium-flags.conf -T $HOME/.config/chromium-flags.conf
-ln -s $SCRIPTPATH/chromium/chromium-flags.conf -T $HOME/.config/chrome-flags.conf
+###########################################################
+# Link Kitty Configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_kitty_config() {
+    echo "Linking Kitty"
+    rm -rf $HOME/.config/kitty
+    ln -s  $SCRIPTPATH/configs/kitty -T $HOME/.config/kitty
+}
+
+###########################################################
+# Link Chromium Configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_neovim_config() {
+    echo "Link neovim config"
+    rm -rf $HOME/.config/nvim
+    ln -s $SCRIPTPATH/configs/nvim -T $HOME/.config/nvim
+}
+
+###########################################################
+# Link Chromium Configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_chromium_browsers_config() {
+    echo "Linking Chromium/Chrome"
+    rm $HOME/.config/chromium-flags.conf
+    rm $HOME/.config/chrome-flags.conf
+    ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf -T $HOME/.config/chromium-flags.conf
+    ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf -T $HOME/.config/chrome-flags.conf
+}
+
+# Call functions
+create_base_folders
+link_git_config_file
+link_zsh_configs
+install_starship_shell
+link_tmux_config
+link_personal_scripts
+link_kitty_config
+link_chromium_browsers_config
+link_neovim_config
