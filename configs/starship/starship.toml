@@ -1,6 +1,6 @@
 # Use custom format
 format = '''
-$os$directory$git_branch$git_status$php$python
+$os$directory$git_branch$git_status$php$python$go
 $character'''
 
 # Inserts a blank line between shell prompts
@@ -43,3 +43,4 @@ format = "via [🐋 $context](blue bold)"
 symbol=' '
 python_binary=['./venv/bin/python', 'python', 'python3', 'python2']
 format="via [$symbol ${version}](blue) [${virtualenv}](yellow)"
+
