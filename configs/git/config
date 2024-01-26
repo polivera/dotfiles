@@ -2,7 +2,7 @@
   defaultBranch = main
 
 [core]
-  excludesfile = ~/git/global_ignore
+  excludesfile = ~/.config/git/global_ignore
 
 [url "git@github.com:"]
   insteadOf = https://github.com/

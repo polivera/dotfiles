@@ -33,7 +33,7 @@ local cmp_configuration = function(_, _)
       { name = "buffer" },
     }),
     formatting = {
-      fields = {'kind', 'menu'},
+      fields = {'kind', 'menu', 'abbr'},
       expandable_indicator = true,
       format = require("lspkind").cmp_format({
         mode = "symbol",       -- show only symbol annotations
