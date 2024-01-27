@@ -24,8 +24,8 @@ function create_base_folders() {
 ###########################################################
 function link_git_config_file() {
     echo "Linking Git config folder"
-    rm -rf $HOME/.config/git
-    ln -s  $SCRIPTPATH/configs/git -T $HOME/.config/git
+    rm -rf $HOME/.config/git 2> /dev/null
+    ln -s  $SCRIPTPATH/configs/git $HOME/.config/git
 }
 
 ###########################################################
@@ -40,8 +40,8 @@ function link_zsh_configs() {
     rm -rf $HOME/.config/zsh
     rm $HOME/.zshrc 2&>/dev/null
     rm $HOME/.zshenv
-    ln -s  $SCRIPTPATH/configs/zsh -T $HOME/.config/zsh
-    ln -s  $HOME/.config/zsh/.zshenv -T $HOME/.zshenv
+    ln -s  $SCRIPTPATH/configs/zsh $HOME/.config/zsh
+    ln -s  $HOME/.config/zsh/.zshenv $HOME/.zshenv
 }
 
 ###########################################################
@@ -54,7 +54,7 @@ function link_zsh_configs() {
 function link_tmux_config() {
     echo "Linking tmux"
     rm -rf $HOME/.config/tmux
-    ln -s  $SCRIPTPATH/configs/tmux -T $HOME/.config/tmux
+    ln -s  $SCRIPTPATH/configs/tmux $HOME/.config/tmux
     if [[ ! -d $HOME/.config/tmux/plugins/tpm ]]; then
         echo "Installing TPM"
         git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
@@ -72,7 +72,7 @@ function link_personal_scripts() {
     # Link Scripts
     echo "Linking Scripts"
     rm -rf $HOME/.local/scripts
-    ln -s $SCRIPTPATH/configs/scripts -T $HOME/.local/scripts
+    ln -s $SCRIPTPATH/configs/scripts $HOME/.local/scripts
 }
 
 ###########################################################
@@ -88,7 +88,7 @@ function install_starship_shell() {
     else
         echo "Install starship shell"
         curl -sS https://starship.rs/install.sh | sh
-        ln -s $SCRIPTPATH/configs/starship/starship.toml -T $HOME/.config/starship.toml
+        ln -s $SCRIPTPATH/configs/starship/starship.toml $HOME/.config/starship.toml
     fi
 }
 
@@ -102,7 +102,7 @@ function install_starship_shell() {
 function link_kitty_config() {
     echo "Linking Kitty"
     rm -rf $HOME/.config/kitty
-    ln -s  $SCRIPTPATH/configs/kitty -T $HOME/.config/kitty
+    ln -s  $SCRIPTPATH/configs/kitty $HOME/.config/kitty
 }
 
 ###########################################################
@@ -115,7 +115,7 @@ function link_kitty_config() {
 function link_neovim_config() {
     echo "Link neovim config"
     rm -rf $HOME/.config/nvim
-    ln -s $SCRIPTPATH/configs/nvim -T $HOME/.config/nvim
+    ln -s $SCRIPTPATH/configs/nvim $HOME/.config/nvim
 }
 
 ###########################################################
@@ -129,8 +129,8 @@ function link_chromium_browsers_config() {
     echo "Linking Chromium/Chrome"
     rm $HOME/.config/chromium-flags.conf
     rm $HOME/.config/chrome-flags.conf
-    ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf -T $HOME/.config/chromium-flags.conf
-    ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf -T $HOME/.config/chrome-flags.conf
+    ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf $HOME/.config/chromium-flags.conf
+    ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf $HOME/.config/chrome-flags.conf
 }
 
 # Call functions

@@ -13,6 +13,8 @@ local plugin_list = {
   require("plugins.gitsigns"),
   require("plugins.neotree"),
   require("plugins.fidget"),
+  -- Custom plugins
+  require("plugins.local"),
 }
 
 local opts = {}
