@@ -15,3 +15,4 @@
 
 [includeIf "gitdir:~/Projects/S4L/"]
   path = ~/.config/git/work/config.s4l
+
