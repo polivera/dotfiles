@@ -1,0 +1,18 @@
+[init]
+  defaultBranch = main
+
+[core]
+  excludesfile = ~/.config/git/global_ignore
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+
+[includeIf "gitdir:~/Projects/Personal/"]
+  path = ~/.config/git/personal/config
+
+[includeIf "gitdir:~/WinProjects/Personal/"]
+  path = ~/.config/git/win-personal/config
+
+[includeIf "gitdir:~/Projects/S4L/"]
+  path = ~/.config/git/work/config.s4l
+

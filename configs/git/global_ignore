@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+.vim-bookmarks
+.vscode
+.phpactor.json
+.env
+.orticonf.lua

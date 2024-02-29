@@ -1,0 +1,11 @@
+# Ignore plugins
+plugins
+
+# zsh core dump
+.zcompdump*
+# zsh history on mac (it is ignoring directive)
+.zsh_history
+# cache
+.zcompcache
+
+.zsh_sessions
