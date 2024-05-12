@@ -62,8 +62,8 @@ alias lla="ll -ahg"
 alias reload-zsh="source $ZDOTDIR/.zshrc"
 alias vialias="$EDITOR $ZDOTDIR/configs/public/alias.sh"
 alias nvim-config="$EDITOR $HOME/.config/nvim/"
-alias nv="nvim ."
-alias nvim="nvim ."
+alias nv="nvim"
+alias vim="nvim"
 # GPG with proper tty
 # GPG_TTY environment variable some times does not act properly
 # this is a workaround

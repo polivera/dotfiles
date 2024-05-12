@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My config files
 
 *nix config files

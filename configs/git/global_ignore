@@ -4,4 +4,5 @@
 .vscode
 .phpactor.json
 .env
-.orticonf.lua
+.dir-locals.el
+

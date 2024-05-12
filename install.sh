@@ -133,6 +133,19 @@ function link_chromium_browsers_config() {
     ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf $HOME/.config/chrome-flags.conf
 }
 
+###########################################################
+# Link Steam configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_steam_config() {
+	echo "Linking Steam configuration"
+	mkdir -p $HOME/.steam/steam
+	ln -s $SCRIPTPATH/configs/steam/steam_dev.cfg $HOME/.steam/steam/steam_dev.cfg
+}
+
 # Call functions
 create_base_folders
 link_git_config_file
@@ -143,3 +156,4 @@ link_personal_scripts
 link_kitty_config
 link_chromium_browsers_config
 link_neovim_config
+link_steam_config
