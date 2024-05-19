@@ -87,7 +87,7 @@ function install_starship_shell() {
         echo "Starship already installed"
     else
         echo "Install starship shell"
-        curl -sS https://starship.rs/install.sh | sh
+        curl -sS https://starship.rs/install.sh | sh -s -- -y
         ln -s $SCRIPTPATH/configs/starship/starship.toml $HOME/.config/starship.toml
     fi
 }
