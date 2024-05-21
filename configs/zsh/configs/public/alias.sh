@@ -15,25 +15,19 @@ wsl) ;;
 esac
 # END
 
-if command -v eza &>/dev/null; then
-	alias ls="eza --group-directories-first --icons"
-elif command -v exa &>/dev/null; then
-	alias ls="exa --group-directories-first --icons"
-else
-	case "$POLI_OS_TYPE" in
-	macos)
-		if command -v gls &>/dev/null; then
-			alias ls="gls --color --group-directories-first"
-		else
-			echo "Remember to install coreutils (brew install coreutils)"
-			alias ls="ls -G"
-		fi
-		;;
-	linux | windows)
-		alias ls="ls --color --group-directories-first"
-		;;
-	esac
-fi
+case "$POLI_OS_TYPE" in
+macos)
+	if command -v gls &>/dev/null; then
+		alias ls="gls --color --group-directories-first"
+	else
+		echo "Remember to install coreutils (brew install coreutils)"
+		alias ls="ls -G"
+	fi
+	;;
+linux | windows)
+	alias ls="ls --color --group-directories-first"
+	;;
+esac
 
 # Command aliases
 if command -v bat &>/dev/null; then
