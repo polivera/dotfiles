@@ -146,6 +146,21 @@ function link_steam_config() {
 	ln -s $SCRIPTPATH/configs/steam/steam_dev.cfg $HOME/.steam/steam/steam_dev.cfg
 }
 
+###########################################################
+# Link Steam configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_ideavim() {
+	echo "Linking Steam configuration"
+    rm -rf $HOME/.config/ideavim
+    rm $HOME/.ideavimrc
+    ln -s $SCRIPTPATH/configs/ideavim $HOME/.config/ideavim
+    ln -s $SCRIPTPATH/configs/ideavim/.ideavimrc $HOME/.ideavimrc
+}
+
 # Call functions
 create_base_folders
 link_git_config_file

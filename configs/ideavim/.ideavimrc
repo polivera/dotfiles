@@ -55,7 +55,8 @@ let mapleader = " "
 " maps
 " Don't use Ex mode, use Q for formatting.
 map Q q
-inoremap <C-g> <esc>
+imap <C-g> <esc>
+nmap <C-g> <esc>
 
 " Change to upper and to lower shortcuts --------------------------------------
 map tu gU
@@ -63,18 +64,29 @@ map tl gu
 vmap tu gU
 vmap tl gu
 
+" Continue shift --------------------------------------------------------------
+xnoremap < <gv
+xnoremap > >gv
+
+" Move up and down through menus
+"imap <C-k> <up>
+"imap <C-j> <down>
+"nmap <C-k> <up>
+"nmap <C-j> <down>
+
+
 " Basics ----------------------------------------------------------------------
-nmap <leader>w <Action>(SaveDocument)
-nmap <Tab> <Action>(NextTab)
-nmap <S-Tab> <Action>(PreviousTab)
-nmap <leader>v <Action>(SplitVertically)
-nmap <leader>x <Action>(SplitHorizontally)
-nmap <leader>c <Action>(Unsplit)
+nmap <leader>w :action SaveDocument<CR>
+nmap <leader>v :action SplitVertically<CR>
+nmap <leader>x :action SplitHorizontally<CR>
+nmap <leader>c :action Unsplit<CR>
+nmap <Tab> :action NextTab<CR>
+nmap <S-Tab> :action PreviousTab<CR>
 
 " Find stuff ------------------------------------------------------------------
-map <leader>ff <Action>(GotoFile)
-nmap <leader>fj <Action>(FindInPath)
-nmap <leader>fu <Action>(Switcher)
+map <leader>ff :action GotoFile<CR>
+nmap <leader>fj :action FindInPath<CR>
+nmap <leader>fu :action Switcher<CR>
 
 " Language related shortcuts --------------------------------------------------
 nmap <leader>ld <Action>(GotoDeclaration)
@@ -85,6 +97,7 @@ nmap <leader>ll <Action>(GotoFile)
 nmap <leader>lf <Action>(ReformatCode)
 nmap <leader>lo <Action>(OptimizeImports)
 nmap <leader>lr <Action>(RenameElement)
+
 
 " Delete Stuff ----------------------------------------------------------------
 nnoremap d "_d
