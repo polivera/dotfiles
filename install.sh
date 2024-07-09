@@ -106,6 +106,19 @@ function link_kitty_config() {
 }
 
 ###########################################################
+# Link Alacritty Configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_alacritty_config() {
+    echo "Linking Kitty"
+    rm -rf $HOME/.config/alacritty
+    ln -s  $SCRIPTPATH/configs/alacritty $HOME/.config/alacritty
+}
+
+###########################################################
 # Link Chromium Configuration
 # Arguments:
 #   None
@@ -168,7 +181,8 @@ link_zsh_configs
 install_starship_shell
 link_tmux_config
 link_personal_scripts
-link_kitty_config
+#link_kitty_config
+link_alacritty_config
 link_chromium_browsers_config
 link_neovim_config
 link_steam_config
