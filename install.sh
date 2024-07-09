@@ -125,19 +125,6 @@ function link_alacritty_config() {
 # Outputs:
 #   None
 ###########################################################
-function link_neovim_config() {
-    echo "Link neovim config"
-    rm -rf $HOME/.config/nvim
-    ln -s $SCRIPTPATH/configs/nvim $HOME/.config/nvim
-}
-
-###########################################################
-# Link Chromium Configuration
-# Arguments:
-#   None
-# Outputs:
-#   None
-###########################################################
 function link_chromium_browsers_config() {
     echo "Linking Chromium/Chrome"
     rm $HOME/.config/chromium-flags.conf
@@ -184,5 +171,4 @@ link_personal_scripts
 #link_kitty_config
 link_alacritty_config
 link_chromium_browsers_config
-link_neovim_config
 link_steam_config
