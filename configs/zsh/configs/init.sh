@@ -22,6 +22,7 @@ fedora)
 macos)
 	# eval "$(/opt/homebrew/bin/brew shellenv)"
 	source /opt/homebrew/Cellar/fzf/*/shell/key-bindings.zsh
+    source /opt/homebrew/opt/autoenv/activate.sh
 	;;
 wsl) # This means WSL
   source /usr/share/doc/fzf/examples/key-bindings.zsh

@@ -29,6 +29,15 @@ else
 fi
 export EDITOR
 
+# Autoenv
+export AUTOENV_ENV_FILENAME=.xapenv
+export AUTOENV_ENV_LEAVE_FILENAME=.xapenv.leave
+export AUTOENV_ASSUME_YES=true
+
+
+# -----------------------------------------------------------------
+# PATH
+# -----------------------------------------------------------------
 # Homebrew
 export BREW_PATH=/opt/homebrew
 # GOLang

@@ -5,4 +5,6 @@
 .phpactor.json
 .env
 .dir-locals.el
-
+.xapenv
+.xapenv.leave
+.nvim.lua
