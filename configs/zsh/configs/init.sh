@@ -29,9 +29,13 @@ wsl) # This means WSL
 	# eval "$(ssh-agent)" &>/dev/null
 	# ssh-add ~/.ssh/* 2 &>/dev/null
 	;;
-*)
+arch)
 	source /usr/share/fzf/key-bindings.zsh
+    source /usr/lib/node_modules/@hyperupcall/autoenv/activate.sh
 	;;
+*)
+    echo "OS not found in init script"
+    ;;
 esac
 
 # -----------------------------------------------------------------------------------------------------
