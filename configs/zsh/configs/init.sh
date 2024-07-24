@@ -17,22 +17,24 @@ zsh_add_plugin "zsh-users/zsh-autosuggestions"
 # FZF (load after vi-mode)
 case "$POLI_OS_NAME" in
 fedora)
-	source /usr/share/fzf/shell/key-bindings.zsh
-	;;
+    source /usr/share/fzf/shell/key-bindings.zsh
+    ;;
 macos)
-	# eval "$(/opt/homebrew/bin/brew shellenv)"
-	source /opt/homebrew/Cellar/fzf/*/shell/key-bindings.zsh
+    # eval "$(/opt/homebrew/bin/brew shellenv)"
+    source /opt/homebrew/Cellar/fzf/*/shell/key-bindings.zsh
     source /opt/homebrew/opt/autoenv/activate.sh
-	;;
+    eval "$(direnv hook zsh)"
+    ;;
 wsl) # This means WSL
-  source /usr/share/doc/fzf/examples/key-bindings.zsh
-	# eval "$(ssh-agent)" &>/dev/null
-	# ssh-add ~/.ssh/* 2 &>/dev/null
-	;;
+    source /usr/share/doc/fzf/examples/key-bindings.zsh
+    # eval "$(ssh-agent)" &>/dev/null
+    # ssh-add ~/.ssh/* 2 &>/dev/null
+    ;;
 arch)
-	source /usr/share/fzf/key-bindings.zsh
+    source /usr/share/fzf/key-bindings.zsh
     source /usr/lib/node_modules/@hyperupcall/autoenv/activate.sh
-	;;
+    eval "$(direnv hook zsh)"
+    ;;
 *)
     echo "OS not found in init script"
     ;;

@@ -7,4 +7,5 @@
 .dir-locals.el
 .xapenv
 .xapenv.leave
+.envrc
 .nvim.lua
