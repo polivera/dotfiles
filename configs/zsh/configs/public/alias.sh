@@ -11,6 +11,11 @@ if command -v bat &>/dev/null; then
 	alias cat='bat'
 fi
 
+# NeoVim
+alias nv='nvim'
+alias v='nvim'
+alias vim='nvim'
+
 # Grep
 alias grep='grep --color=auto'
 
