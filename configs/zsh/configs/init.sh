@@ -23,7 +23,6 @@ macos)
     # eval "$(/opt/homebrew/bin/brew shellenv)"
     source /opt/homebrew/Cellar/fzf/*/shell/key-bindings.zsh
     source /opt/homebrew/opt/autoenv/activate.sh
-    eval "$(direnv hook zsh)"
     ;;
 wsl) # This means WSL
     source /usr/share/doc/fzf/examples/key-bindings.zsh
@@ -33,7 +32,6 @@ wsl) # This means WSL
 arch)
     source /usr/share/fzf/key-bindings.zsh
     source /usr/lib/node_modules/@hyperupcall/autoenv/activate.sh
-    eval "$(direnv hook zsh)"
     ;;
 *)
     echo "OS not found in init script"
