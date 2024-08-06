@@ -41,8 +41,8 @@ function link_git_config_file() {
 function link_zsh_configs() {
 	echo "Linking ZSH"
 	rm -rf $HOME/.config/zsh
-	rm $HOME/.zshrc 2 &>/dev/null
-	rm $HOME/.zshenv
+	rm $HOME/.zshrc 2>/dev/null
+	rm $HOME/.zshenv 2>/dev/null
 	ln -s $SCRIPTPATH/configs/zsh $HOME/.config/zsh
 	ln -s $HOME/.config/zsh/.zshenv $HOME/.zshenv
 }
@@ -56,7 +56,7 @@ function link_zsh_configs() {
 ###########################################################
 function link_tmux_config() {
 	echo "Linking tmux"
-	rm -rf $HOME/.config/tmux
+	rm -rf $HOME/.config/tmux 2>/dev/null
 	ln -s $SCRIPTPATH/configs/tmux $HOME/.config/tmux
 	if [[ ! -d $HOME/.config/tmux/plugins/tpm ]]; then
 		echo "Installing TPM"
@@ -74,7 +74,7 @@ function link_tmux_config() {
 function link_personal_scripts() {
 	# Link Scripts
 	echo "Linking Scripts"
-	rm -rf $HOME/.local/scripts
+	rm -rf $HOME/.local/scripts 2>/dev/null
 	ln -s $SCRIPTPATH/configs/scripts $HOME/.local/scripts
 }
 
@@ -104,7 +104,7 @@ function install_starship_shell() {
 ###########################################################
 function link_kitty_config() {
 	echo "Linking Kitty"
-	rm -rf $HOME/.config/kitty
+	rm -rf $HOME/.config/kitty 2>/dev/null
 	ln -s $SCRIPTPATH/configs/kitty $HOME/.config/kitty
 }
 
@@ -117,7 +117,7 @@ function link_kitty_config() {
 ###########################################################
 function link_alacritty_config() {
 	echo "Linking Kitty"
-	rm -rf $HOME/.config/alacritty
+	rm -rf $HOME/.config/alacritty 2>/dev/null
 	ln -s $SCRIPTPATH/configs/alacritty $HOME/.config/alacritty
 }
 
@@ -130,8 +130,8 @@ function link_alacritty_config() {
 ###########################################################
 function link_chromium_browsers_config() {
 	echo "Linking Chromium/Chrome"
-	rm $HOME/.config/chromium-flags.conf
-	rm $HOME/.config/chrome-flags.conf
+	rm $HOME/.config/chromium-flags.conf 2>/dev/null
+	rm $HOME/.config/chrome-flags.conf 2>/dev/null
 	ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf $HOME/.config/chromium-flags.conf
 	ln -s $SCRIPTPATH/configs/chromium/chromium-flags.conf $HOME/.config/chrome-flags.conf
 }
@@ -146,6 +146,7 @@ function link_chromium_browsers_config() {
 function link_steam_config() {
 	echo "Linking Steam configuration"
 	mkdir -p $HOME/.steam/steam
+	rm $HOME/.steam/steam/steam_dev.cfg 2>/dev/null
 	ln -s $SCRIPTPATH/configs/steam/steam_dev.cfg $HOME/.steam/steam/steam_dev.cfg
 }
 
@@ -158,17 +159,25 @@ function link_steam_config() {
 ###########################################################
 function link_ideavim() {
 	echo "Linking Steam configuration"
-	rm -rf $HOME/.config/ideavim
-	rm $HOME/.ideavimrc
+	rm -rf $HOME/.config/ideavim 2>/dev/null
+	rm $HOME/.ideavimrc 2>/dev/null
 	ln -s $SCRIPTPATH/configs/ideavim $HOME/.config/ideavim
 	ln -s $SCRIPTPATH/configs/ideavim/.ideavimrc $HOME/.ideavimrc
 }
 
+###########################################################
+# Link Plasma configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
 function install_plasma_config() {
-	rm -rf $HOME/.config/autostart
-	rm $HOME/.config/kdeglobals
-	rm $HOME/.config/kwinrc
-	rm $HOME/.config/kxkbrc
+	echo "Linking Plasma config files"
+	rm -rf $HOME/.config/autostart 2>/dev/null
+	rm $HOME/.config/kdeglobals 2>/dev/null
+	rm $HOME/.config/kwinrc 2>/dev/null
+	rm $HOME/.config/kxkbrc 2>/dev/null
 
 	ln -s $SCRIPTPATH/configs/plasma/autostart -T $HOME/.config/autostart
 	ln -s $SCRIPTPATH/configs/plasma/kdeglobals -T $HOME/.config/kdeglobals
