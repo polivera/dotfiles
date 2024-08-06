@@ -164,6 +164,18 @@ function link_ideavim() {
 	ln -s $SCRIPTPATH/configs/ideavim/.ideavimrc $HOME/.ideavimrc
 }
 
+function install_plasma_config() {
+	rm -rf $HOME/.config/autostart
+	rm $HOME/.config/kdeglobals
+	rm $HOME/.config/kwinrc
+	rm $HOME/.config/kxkbrc
+
+	ln -s $SCRIPTPATH/configs/plasma/autostart -T $HOME/.config/autostart
+	ln -s $SCRIPTPATH/configs/plasma/kdeglobals -T $HOME/.config/kdeglobals
+	ln -s $SCRIPTPATH/configs/plasma/kwinrc -T $HOME/.config/kwinrc
+	ln -s $SCRIPTPATH/configs/plasma/kxkbrc -T $HOME/.config/kxkbrc
+}
+
 # Call functions
 create_base_folders
 link_git_config_file
@@ -175,3 +187,4 @@ link_personal_scripts
 link_alacritty_config
 #link_chromium_browsers_config
 link_steam_config
+install_plasma_config
