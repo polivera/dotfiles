@@ -3,11 +3,9 @@
 # == Custom Scripts ===========================================================
 PATH=$PATH:"$HOME/.local/scripts"
 
-# Load development tools
-# NVM
-# export NVM_DIR=$XDG_CONFIG_HOME/nvm
-# export NVM_SYMLINK_CURRENT=true
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# == NPM ======================================================================
+NPM_PREFIX=$HOME/.local/npm-global
+PATH=$PATH:"$NPM_PREFIX/bin"
 
 # == PHP ======================================================================
 export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
