@@ -58,6 +58,7 @@ alias dx="docker context"
 alias dexec="docker exec -it"
 
 if [[ "$XAP_OS" = "arch" ]]; then
+	alias mirror-refresh="sudo reflector --country Spain,Germany,France,England --age 24 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
 	alias pm="sudo pacman"
 	alias pmss="sudo pacman -Ss"
 	alias pms="sudo pacman -S"

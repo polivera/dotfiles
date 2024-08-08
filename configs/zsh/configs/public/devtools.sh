@@ -2,7 +2,6 @@
 
 # == Custom Scripts ===========================================================
 PATH=$PATH:"$HOME/.local/scripts"
-PATH=$PATH:"$HOME/.local/bins"
 
 # Load development tools
 # NVM
