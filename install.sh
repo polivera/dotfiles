@@ -183,6 +183,7 @@ function install_plasma_config() {
 	ln -s $SCRIPTPATH/configs/plasma/kdeglobals -T $HOME/.config/kdeglobals
 	ln -s $SCRIPTPATH/configs/plasma/kwinrc -T $HOME/.config/kwinrc
 	ln -s $SCRIPTPATH/configs/plasma/kxkbrc -T $HOME/.config/kxkbrc
+	ln -s $SCRIPTPATH/configs/plasma/kglobalshortcutsrc -T $HOME/.config/kglobalshortcutsrc
 }
 
 # Call functions

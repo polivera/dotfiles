@@ -1,4 +1,6 @@
 [Layout]
 LayoutList=us
+Options=caps:ctrl_modifier
+ResetOldOptions=true
 Use=true
 VariantList=altgr-intl
