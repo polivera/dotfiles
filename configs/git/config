@@ -4,8 +4,11 @@
 [core]
   excludesfile = ~/.config/git/global_ignore
 
-# [url "ssh://git@github.com/"]
-#     insteadOf = https://github.com/
+[url "git@s4lgit:stayforlong"]
+  insteadOf = https://github.com/stayforlong
+
+[url "git@pergit:polivera"]
+  insteadOf = https://github.com/polivera
 
 [pull]
   rebase = false

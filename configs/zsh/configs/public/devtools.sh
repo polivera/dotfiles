@@ -12,5 +12,5 @@ export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
 PATH=$PATH:"$PHP_COMPOSER_PATH/vendor/bin"
 
 # == GO =======================================================================
-export GO_PATH=$XDG_DATA_HOME/go
-PATH=$PATH:"$GO_PATH/bin"
+export GOPATH=$XDG_DATA_HOME/go
+PATH=$PATH:"$GOPATH/bin"
