@@ -32,6 +32,19 @@ function link_git_config_file() {
 }
 
 ###########################################################
+# Link SSH configuration
+# Arguments:
+#   None
+# Outputs:
+#   None
+###########################################################
+function link_ssh_config_file() {
+	echo "Linking SSH config folder"
+	rm -rf $HOME/.ssh/config 2>/dev/null
+	ln -s $SCRIPTPATH/configs/ssh/config $HOME/.ssh/config
+}
+
+###########################################################
 # Link ZSH Configuration
 # Arguments:
 #   None
@@ -189,6 +202,7 @@ function install_plasma_config() {
 # Call functions
 create_base_folders
 link_git_config_file
+link_ssh_config_file
 link_zsh_configs
 install_starship_shell
 link_tmux_config
