@@ -191,6 +191,7 @@ function install_plasma_config() {
 	rm $HOME/.config/kdeglobals 2>/dev/null
 	rm $HOME/.config/kwinrc 2>/dev/null
 	rm $HOME/.config/kxkbrc 2>/dev/null
+	rm $HOME/.config/kglobalshortcutsrc 2>/dev/null
 
 	ln -s $SCRIPTPATH/configs/plasma/autostart -T $HOME/.config/autostart
 	ln -s $SCRIPTPATH/configs/plasma/kdeglobals -T $HOME/.config/kdeglobals
