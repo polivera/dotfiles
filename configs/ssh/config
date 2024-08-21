@@ -14,7 +14,7 @@ Host pergit
     IdentitiesOnly yes
 
 Host s4lgit
-    HostName gitlab.com
+    HostName github.com
     User git
     IdentityFile ~/.ssh/s4l-key.pub
     IdentitiesOnly yes
