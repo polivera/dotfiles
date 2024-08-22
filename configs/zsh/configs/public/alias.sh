@@ -4,7 +4,7 @@ alias reload-zsh="source $ZDOTDIR/.zshrc"
 alias vialias="$EDITOR $ZDOTDIR/configs/public/alias.sh"
 
 if command -v exa &>/dev/null; then
-	alias ls="exa -l --group-directories-first -h --sort name"
+	alias ls="exa -l --group-directories-first -h -g --no-time --git --sort name"
 fi
 
 if command -v bat &>/dev/null; then
