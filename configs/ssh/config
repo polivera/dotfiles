@@ -19,3 +19,5 @@ Host s4lgit
     IdentityFile ~/.ssh/s4l-key.pub
     IdentitiesOnly yes
 
+Host 192.168.*
+    IdentityFile ~/.ssh/personal-key.pub
