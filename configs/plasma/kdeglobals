@@ -136,8 +136,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=960,540
-History Items[$e]=file:$HOME/Nextcloud/Documents/MyNotes,file:$HOME/.local/share/chrome-extensions/sfl-chrome-extension-master,file:$HOME/.local/share/chrome-extensions/sfl-chrome-extension-master,file:$HOME/.local/,file:$HOME/.local/chrome-extensions,file:$HOME/Nextcloud/Books,file:$HOME/Nextcloud/Documents/MyNotes
+DirSelectDialog Size=823,584
+History Items[$e]=file:$HOME/Nextcloud/Images/Wallpapers,file:$HOME/Nextcloud/Documents/MyNotes,file:$HOME/Nextcloud/Documents/MyNotes,file:$HOME/.local/share/chrome-extensions/sfl-chrome-extension-master,file:$HOME/.local/share/chrome-extensions/sfl-chrome-extension-master,file:$HOME/.local/,file:$HOME/.local/chrome-extensions,file:$HOME/Nextcloud/Books,file:$HOME/Nextcloud/Documents/MyNotes
 
 [General]
 AccentColor=61,174,233
