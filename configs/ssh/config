@@ -20,6 +20,4 @@ Host s4lgit
     IdentitiesOnly yes
 
 Host 192.168.*
-    User pepefrog
     IdentityFile ~/.ssh/personal-key.pub
-

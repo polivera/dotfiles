@@ -4,7 +4,7 @@ alias reload-zsh="source $ZDOTDIR/.zshrc"
 alias vialias="$EDITOR $ZDOTDIR/configs/public/alias.sh"
 
 if command -v exa &>/dev/null; then
-	alias ls="exa -l --group-directories-first -h --sort name"
+	alias ls="exa -l --group-directories-first -h -g --no-time --git --sort name"
 fi
 
 if command -v bat &>/dev/null; then
@@ -56,6 +56,9 @@ alias dcur="docker compose up -d --force-recreate"
 alias dcurb="docker compose up -d --force-recreate --build"
 alias dx="docker context"
 alias dexec="docker exec -it"
+
+# Misc
+alias expofzf="export | fzf"
 
 if [[ "$XAP_OS" = "arch" ]]; then
 	alias mirror-refresh="sudo reflector --country Spain,Germany,France,England --age 24 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
