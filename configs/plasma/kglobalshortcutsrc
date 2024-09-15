@@ -2,6 +2,8 @@
 _k_friendly_name=Activity Manager
 switch-to-activity-44ab38e3-17a1-479c-b849-49ce8b4236ee=none,none,Switch to activity "Personal"
 switch-to-activity-57e0e56d-aba5-4da2-bfce-1eaf1d292767=none,none,Switch to activity "Work"
+switch-to-activity-bf091e08-727e-42cb-a6d4-b82d9c33443d=none,none,Switch to activity "Work"
+switch-to-activity-ca201c5c-ccd0-4e6f-9710-ce47acc535a6=none,none,Switch to activity "Personal"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (intl., with AltGr dead keys)=none,none,Switch keyboard layout to English (intl.\\, with AltGr dead keys)
@@ -40,6 +42,11 @@ Reboot=none,,Reboot
 Reboot Without Confirmation=none,,Reboot Without Confirmation
 Shut Down=none,,Shut Down
 _k_friendly_name=Session Management
+
+[ktorrent]
+_k_friendly_name=KTorrent
+queue_suspend=Alt+Shift+P,Alt+Shift+P,Suspend Torrents
+show_kt=Alt+Shift+T,Alt+Shift+T,Show/Hide KTorrent
 
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
@@ -253,3 +260,14 @@ stop current activity=none,Meta+S,Stop Current Activity
 switch to next activity=Meta+Tab,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[wacomtablet]
+Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Map to fullscreen
+Map to screen 1=Meta+Ctrl+1,Meta+Ctrl+1,Map to screen 1
+Map to screen 2=Meta+Ctrl+2,Meta+Ctrl+2,Map to screen 2
+Next Profile=Meta+Ctrl+N,Meta+Ctrl+N,Next profile
+Previous Profile=Meta+Ctrl+P,Meta+Ctrl+P,Previous Profile
+Toggle screen map selection=Meta+Ctrl+M,Meta+Ctrl+M,Toggle between all screens
+Toggle stylus mode=Meta+Ctrl+S,Meta+Ctrl+S,Toggle the Stylus Tool Relative/Absolute
+Toggle touch tool=Meta+Ctrl+T,Meta+Ctrl+T,Enable/Disable the Touch Tool
+_k_friendly_name=Wacom Tablet
