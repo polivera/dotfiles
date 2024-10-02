@@ -9,8 +9,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'm:{A-Z}={a-z}'
 zstyle ':completion:*' menu select
 
 # Enable case-insensitive globbing and matching
-setopt nocaseglob
-setopt nocasematch
+# setopt nocaseglob
+# setopt nocasematch
 
 # Allow partial-word matches
 zstyle ':completion:*' completer _complete _match

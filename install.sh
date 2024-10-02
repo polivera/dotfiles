@@ -40,6 +40,7 @@ function link_git_config_file() {
 ###########################################################
 function link_ssh_config_file() {
 	echo "Linking SSH config folder"
+	mkdir $HOME/.ssh 2>/dev/null
 	rm -rf $HOME/.ssh/config 2>/dev/null
 	ln -s $SCRIPTPATH/configs/ssh/config $HOME/.ssh/config
 }

@@ -49,6 +49,19 @@ function zsh_add_plugin() {
 	fi
 }
 
+function add_git_plugin() {
+	# Git completion bash is required for git-completion zsh
+	git_comp_bash_script="$ZDOTDIR/plugins/git-completion.bash"
+	if [[ ! -f $git_comp_bash_script ]]; then
+		curl -o "$git_comp_bash_script" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+	fi
+	git_comp_zsh_script="$ZDOTDIR/plugins/git-completion.zsh"
+	if [[ ! -f $git_comp_zsh_script ]]; then
+		curl -o "$git_comp_zsh_script" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+	fi
+	source $git_comp_zsh_script
+}
+
 # Include all the files in a folder
 zsh_add_folder() {
 	for f in $1/*; do
