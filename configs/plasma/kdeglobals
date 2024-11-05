@@ -136,13 +136,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=1280,720
-History Items[$e]=file:$HOME/Documents/Notes,file:$HOME/Documents/Books,file:$HOME/Documents/S4L/sfl-chrome-extension,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Documents/Notes,file:$HOME/Documents/Notes,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Documents/Books,file:$HOME/Documents/Books,file:$HOME/Documents/Books,file:$HOME/Nextcloud/Documents/MyNotes,file:$HOME/.local/share/chrome-extensions/sfl-chrome-extension-master,file:$HOME/.local/share/chrome-extensions/sfl-chrome-extension-master,file:$HOME/.local/,file:$HOME/.local/chrome-extensions,file:$HOME/Nextcloud/Books,file:$HOME/Nextcloud/Documents/MyNotes
+DirSelectDialog Size=820,584
+History Items[$e]=file:$HOME/Projects/S4L,file:$HOME/Documents/Task,file:$HOME/Projects/Personal/ortilib,file:$HOME/Projects/Personal/ortilib,file:$HOME/Downloads,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Projects/S4L
 
 [General]
 AccentColor=61,174,233
 BrowserApplication=brave-browser.desktop
-ColorSchemeHash=4a48bd34ba53d580d8594cb0216221e77518509f
+ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
 LastUsedCustomAccentColor=61,174,233
 
 [KDE]
@@ -162,10 +162,10 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Name
+Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=140
 View Style=DetailTree
 

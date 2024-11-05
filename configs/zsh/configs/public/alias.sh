@@ -3,6 +3,12 @@
 alias reload-zsh="source $ZDOTDIR/.zshrc"
 alias vialias="$EDITOR $ZDOTDIR/configs/public/alias.sh"
 
+case "$XAP_OS" in
+macos)
+	alias ls="gls -l --color --group-directories-first -h"
+	;;
+esac
+
 if command -v exa &>/dev/null; then
 	alias ls="exa -l --group-directories-first -h -g --no-time --git --sort name"
 fi
@@ -49,7 +55,7 @@ alias gw="git worktree"
 
 # Docker
 alias d="docker"
-alias dps="docker ps"
+alias dps="docker ps --format \"{{.ID}} {{.Names}} {{.Ports}}\""
 alias dc="docker compose"
 alias dcu="docker compose up -d"
 alias dcur="docker compose up -d --force-recreate"

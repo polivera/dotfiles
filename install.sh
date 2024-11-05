@@ -165,14 +165,14 @@ function link_steam_config() {
 }
 
 ###########################################################
-# Link Steam configuration
+# Link IdeaVim configuration
 # Arguments:
 #   None
 # Outputs:
 #   None
 ###########################################################
 function link_ideavim() {
-	echo "Linking Steam configuration"
+	echo "Linking Ideavim configuration"
 	rm -rf $HOME/.config/ideavim 2>/dev/null
 	rm $HOME/.ideavimrc 2>/dev/null
 	ln -s $SCRIPTPATH/configs/ideavim $HOME/.config/ideavim
@@ -212,5 +212,5 @@ link_personal_scripts
 #link_kitty_config
 link_alacritty_config
 #link_chromium_browsers_config
-link_steam_config
+# link_steam_config
 install_plasma_config

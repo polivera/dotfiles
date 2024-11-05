@@ -23,7 +23,3 @@ else
   fi
 fi
 export EDITOR
-
-# Homebrew
-PATH=$PATH:"/opt/homebrew/bin"
-PATH=$PATH:"$HOME/.local/bin"

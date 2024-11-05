@@ -18,11 +18,13 @@ check_os
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
-# Initialize starship
-eval "$(starship init zsh)"
-
 # Include public config
 zsh_add_folder $ZDOTDIR/configs/public
 
 # Include private configs
-zsh_add_folder $ZDOTDIR/configs/private
+# zsh_add_folder $ZDOTDIR/configs/private
+
+# Initialize starship
+if [ "$TERM" != "dumb" ]; then
+    eval "$(starship init zsh)"
+fi
