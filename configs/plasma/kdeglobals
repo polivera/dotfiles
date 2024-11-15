@@ -137,7 +137,7 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=820,584
-History Items[$e]=file:$HOME/Projects/S4L,file:$HOME/Documents/Task,file:$HOME/Projects/Personal/ortilib,file:$HOME/Projects/Personal/ortilib,file:$HOME/Downloads,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Projects/S4L
+History Items[$e]=file:$HOME/Projects/S4L,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Downloads,file:$HOME/Documents/S4L,file:$HOME/Projects/Personal,file:$HOME/Seafile,file:$HOME/Projects/S4L,file:$HOME/Documents/Task,file:$HOME/Projects/Personal/ortilib,file:$HOME/Projects/Personal/ortilib,file:$HOME/Downloads,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Projects/S4L
 
 [General]
 AccentColor=61,174,233

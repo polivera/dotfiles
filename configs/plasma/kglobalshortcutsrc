@@ -7,9 +7,11 @@ switch-to-activity-5afa5c5a-f65d-4f52-b291-0b06167b1fe1=none,none,Switch to acti
 switch-to-activity-5d7d9713-6bcf-4c9b-8230-45f55dab3a15=none,none,Switch to activity "Work"
 switch-to-activity-614054e3-220f-4da6-9800-1dae7b8d8f9c=none,none,Switch to activity "Work"
 switch-to-activity-9338af4f-3fc5-43ba-85e3-393066cef77c=none,none,Switch to activity "Personal"
+switch-to-activity-bb0d3d98-4726-4711-a03c-4e00e17b51aa=none,none,Switch to activity "Personal"
 switch-to-activity-bc5f212f-ebdc-4d2d-9d94-cfc3b6edeaf4=none,none,Switch to activity "Personal"
 switch-to-activity-bf091e08-727e-42cb-a6d4-b82d9c33443d=none,none,Switch to activity "Work"
 switch-to-activity-ca201c5c-ccd0-4e6f-9710-ce47acc535a6=none,none,Switch to activity "Personal"
+switch-to-activity-e6747152-c6cf-4403-afb6-28af8352d822=none,none,Switch to activity "Work"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
@@ -260,6 +262,7 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 29=none,none,Activate Activity Pager Widget
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
+activate widget 32=none,none,Activate Activity Pager Widget
 activate widget 33=none,none,Activate Activity Pager Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu

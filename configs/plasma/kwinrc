@@ -9,9 +9,11 @@ Rows=1
 
 [NightColor]
 Active=true
+LatitudeAuto=39.46
 LatitudeFixed=38.7373897639642
+LongitudeAuto=-0.39
 LongitudeFixed=0.19650945854948532
-NightTemperature=3600
+NightTemperature=3200
 
 [Tiling]
 padding=4

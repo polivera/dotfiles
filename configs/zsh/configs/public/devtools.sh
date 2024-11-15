@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: Check if string exist before add to PATH
+
 # == Custom Scripts ============================================================
 PATH=$PATH:"$HOME/.local/scripts"
 
@@ -18,3 +20,6 @@ PATH=$PATH:"$GOPATH/bin"
 # == RUST ======================================================================
 export CARGO_HOME=$HOME/.local/share/cargo
 PATH=$PATH:"$CARGO_HOME/bin"
+
+# == C ========================================================================
+export LD_LIBRARY_PATH="$HOME/.local/usr/lib:$LD_LIBRARY_PATH"
