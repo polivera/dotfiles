@@ -7,6 +7,9 @@ case "$XAP_OS" in
 macos)
 	alias ls="gls -l --color --group-directories-first -h"
 	;;
+arch)
+	alias open="xdg-open"
+	;;
 esac
 
 if command -v exa &>/dev/null; then

@@ -1,0 +1,13 @@
+{
+    "$schema": "/usr/lib/phpactor/phpactor.schema.json",
+    "completion.limit": 5000,
+    "indexer.index_path": "~/.config/phpactor/cache/%project_id%",
+    "indexer.include_patterns": ["*.php"],
+    "indexer.enabled_watchers": ["inotify", "watchman"],
+    "indexer.exclude_patterns": [
+	"\/vendor\/**\/Tests\/**\/*",
+	"\/vendor\/**\/tests\/**\/*",
+        "\/vendor\/composer\/**\/*",
+	"\/var\/cache\/**\/*"
+    ]
+}

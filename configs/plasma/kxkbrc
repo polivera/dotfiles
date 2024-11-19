@@ -1,7 +1,7 @@
 [Layout]
 LayoutList=us
 Model=pc86
-Options=caps:ctrl_modifier
+Options=ctrl:nocaps
 ResetOldOptions=true
 Use=true
 VariantList=altgr-intl
