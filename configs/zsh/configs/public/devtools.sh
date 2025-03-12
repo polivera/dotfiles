@@ -6,7 +6,7 @@
 PATH=$PATH:"$HOME/.local/scripts"
 
 # == NPM =======================================================================
-NPM_PREFIX=$HOME/.local/npm-global
+export NPM_PREFIX=$HOME/.local/npm-global
 PATH=$PATH:"$NPM_PREFIX/bin"
 
 # == PHP =======================================================================
@@ -23,3 +23,8 @@ PATH=$PATH:"$CARGO_HOME/bin"
 
 # == C ========================================================================
 export LD_LIBRARY_PATH="$HOME/.local/usr/lib:$LD_LIBRARY_PATH"
+
+# == Jetbrains ================================================================
+export JETBRAINS_SCRIPTS="$HOME/.local/bin/jetbrains"
+mkdir -p $JETBRAINS_SCRIPTS 2>/dev/null
+PATH=$PATH:$JETBRAINS_SCRIPTS
