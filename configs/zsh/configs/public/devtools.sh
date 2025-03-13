@@ -5,6 +5,10 @@
 # == Custom Scripts ============================================================
 PATH=$PATH:"$HOME/.local/scripts"
 
+# == Neovim ====================================================================
+export NVIM_MASON="$HOME/.local/share/nvim/mason"
+PATH=$PATH:"$NVIM_MASON/bin"
+
 # == NPM =======================================================================
 export NPM_PREFIX=$HOME/.local/npm-global
 PATH=$PATH:"$NPM_PREFIX/bin"
