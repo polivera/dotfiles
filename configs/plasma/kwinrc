@@ -1,3 +1,7 @@
+[Activities][LastVirtualDesktop]
+034dd6b0-862e-4b8f-bc7d-8209f281c52d=1fb79775-53ea-4e37-9388-3d662ca5b7f4
+e0be7cfc-c85f-45d4-87ac-49a65457ad3c=ce9c58f5-4d18-4f85-8aeb-b08a00f44eae
+
 [Desktops]
 Id_1=ce9c58f5-4d18-4f85-8aeb-b08a00f44eae
 Id_2=32c57bd1-ea7f-499f-8180-b89354316722
@@ -10,9 +14,10 @@ Rows=1
 [NightColor]
 Active=true
 LatitudeAuto=39.46
-LatitudeFixed=38.7373897639642
+LatitudeFixed=38.77275763628614
 LongitudeAuto=-0.39
-LongitudeFixed=0.19650945854948532
+LongitudeFixed=-0.19232205152326287
+Mode=Location
 NightTemperature=3200
 
 [Tiling]

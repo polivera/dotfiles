@@ -136,23 +136,24 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=820,584
-History Items[$e]=file:$HOME/Projects/S4L,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Downloads,file:$HOME/Documents/S4L,file:$HOME/Projects/Personal,file:$HOME/Seafile,file:$HOME/Projects/S4L,file:$HOME/Documents/Task,file:$HOME/Projects/Personal/ortilib,file:$HOME/Projects/Personal/ortilib,file:$HOME/Downloads,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Projects/S4L
+DirSelectDialog Size=786,573
+History Items[$e]=file:$HOME/Documents/Books,file:$HOME/Downloads/sfl-chrome-extension,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Documents/S4L,file:$HOME/Documents/Notes,file:$HOME/Downloads,file:$HOME/Projects/S4L,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Downloads,file:$HOME/Documents/S4L,file:$HOME/Projects/Personal,file:$HOME/Seafile,file:$HOME/Projects/S4L,file:$HOME/Documents/Task,file:$HOME/Projects/Personal/ortilib,file:$HOME/Projects/Personal/ortilib,file:$HOME/Downloads,file:$HOME/Pictures/Images/Wallpapers,file:$HOME/Pictures/Images,file:$HOME/Documents/Books,file:$HOME/Documents/Personal,file:$HOME/Projects/S4L
 
 [General]
 AccentColor=61,174,233
 BrowserApplication=brave-browser.desktop
-ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
+ColorSchemeHash=8d483e98b770fbeba364db371382301dbfc92748
 LastUsedCustomAccentColor=61,174,233
 
 [KDE]
-AnimationDurationFactor=0
+AnimationDurationFactor=0.08838834764831843
 LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=false
 
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -168,6 +169,10 @@ Sort hidden files last=false
 Sort reversed=true
 Speedbar Width=140
 View Style=DetailTree
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
 
 [WM]
 activeBackground=49,54,59

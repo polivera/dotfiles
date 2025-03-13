@@ -2,6 +2,9 @@
 
 # TODO: Check if string exist before add to PATH
 
+# == Custom Bins ============================================================
+PATH=$PATH:"$HOME/.local/bin"
+
 # == Custom Scripts ============================================================
 PATH=$PATH:"$HOME/.local/scripts"
 
@@ -23,3 +26,7 @@ PATH=$PATH:"$CARGO_HOME/bin"
 
 # == C ========================================================================
 export LD_LIBRARY_PATH="$HOME/.local/usr/lib:$LD_LIBRARY_PATH"
+
+# == Jetbrains ================================================================
+export JETBRAINS_SCRIPTS="$HOME/.local/share/JetBrains/Toolbox/scripts"
+PATH=$PATH:"$JETBRAINS_SCRIPTS"
