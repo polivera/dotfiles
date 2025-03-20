@@ -66,6 +66,13 @@ alias dcurb="docker compose up -d --force-recreate --build"
 alias dx="docker context"
 alias dexec="docker exec -it"
 
+# Kubernetes
+alias k="kubectl"
+alias kgn="kubectl get nodes"
+alias kgp="kubectl get pods"
+alias kgs="kubectl get service"
+alias kpf="kubectl port-forward"
+
 # Misc
 alias expofzf="export | fzf"
 
