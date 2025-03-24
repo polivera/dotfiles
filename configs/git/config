@@ -7,9 +7,6 @@
 [url "git@s4lgit:stayforlong"]
   insteadOf = https://github.com/stayforlong
 
-[url "git@pergit:polivera"]
-  insteadOf = https://github.com/polivera
-
 [pull]
   rebase = false
 
