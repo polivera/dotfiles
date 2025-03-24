@@ -13,12 +13,6 @@ Host pergit
     IdentityFile ~/.ssh/personal-key.pub
     IdentitiesOnly yes
 
-Host s4lgit
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/s4l-key.pub
-    IdentitiesOnly yes
-
 Host git.vicugna.party
     HostName ssh.git.vicugna.party
     User git
