@@ -64,12 +64,12 @@ function add_git_plugin() {
 
 # Check if a tunnel is active
 function xap_check_tunnel() {
-	# TODO: Chagne variable name?
 	if pgrep -f "tunnel|ssh -L|ssh -R|ngrok" >/dev/null; then
-		export TUNNEL_ACTIVE=1
+		export TUNNEL_STATUS='🔗 TUNNEL'
 	else
-		unset TUNNEL_ACTIVE
+		export TUNNEL_STATUS=''
 	fi
+	return 0
 }
 
 # Include all the files in a folder

@@ -1,6 +1,6 @@
 # Use custom format
 format = '''
-$os$directory$git_branch$git_status$php$python$go
+$os$directory$git_branch$git_status$php$python$go$env_var
 $character'''
 
 # Inserts a blank line between shell prompts
@@ -47,8 +47,12 @@ format="via [$symbol ${version}](blue) [${virtualenv}](yellow)"
 
 # Customs
 # TODO: This is not working yet
-[env_var.TUNNEL_ACTIVE]
-variable = "TUNNEL_ACTIVE"
+[custom.tunnel]
+command = "exec xap_check_tunnel"
+when = true
+format = "[$output](purple) "
+
+[env_var.TUNNEL_STATUS]
+variable = "TUNNEL_STATUS"
 default = ""
-format = "[🔗 TUNNEL]($style) "
-style = "bold purple"
+format = "[$env_value](bold purple) "
