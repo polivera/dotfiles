@@ -20,11 +20,12 @@ zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
 # Include public config
 zsh_add_folder $ZDOTDIR/configs/public
+zsh_add_folder $ZDOTDIR/configs/private
 
 # Include private configs
 # zsh_add_folder $ZDOTDIR/configs/private
 
 # Initialize starship
 if [ "$TERM" != "dumb" ]; then
-    eval "$(starship init zsh)"
+	eval "$(starship init zsh)"
 fi
