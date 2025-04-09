@@ -62,16 +62,6 @@ function add_git_plugin() {
 	source $git_comp_zsh_script
 }
 
-# Check if a tunnel is active
-function xap_check_tunnel() {
-	if pgrep -f "tunnel|ssh -L|ssh -R|ngrok" >/dev/null; then
-		export TUNNEL_STATUS='🔗 TUNNEL'
-	else
-		export TUNNEL_STATUS=''
-	fi
-	return 0
-}
-
 # Include all the files in a folder
 zsh_add_folder() {
 	for f in $1/*; do

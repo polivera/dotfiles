@@ -1,6 +1,6 @@
 # Use custom format
 format = '''
-$os$directory$git_branch$git_status$php$python$go$env_var
+$os$directory$git_branch$git_status$php$python$go$custom
 $character'''
 
 # Inserts a blank line between shell prompts
@@ -56,3 +56,11 @@ format = "[$output](purple) "
 variable = "TUNNEL_STATUS"
 default = ""
 format = "[$env_value](bold purple) "
+
+[custom.flipflow_tunnel_mysql]
+when = "pgrep -f 'flipflow-tunnel-mysql'"
+format = "[󱠾 MySQL](bold red) "
+
+[custom.flipflow_tunnel_druid]
+when = "pgrep -f 'flipflow-tunnel-druid'"
+format = "[󱠾 Druid](bold red) "
