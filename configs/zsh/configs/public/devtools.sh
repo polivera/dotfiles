@@ -16,6 +16,10 @@ PATH=$PATH:"$NVIM_MASON/bin"
 export NPM_PREFIX=$HOME/.local/npm-global
 PATH=$PATH:"$NPM_PREFIX/bin"
 
+# == N =========================================================================
+export N_PREFIX=$HOME/.local/n/
+PATH="$N_PREFIX/bin":$PATH
+
 # == PHP =======================================================================
 export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
 PATH=$PATH:"$PHP_COMPOSER_PATH/vendor/bin"
@@ -33,5 +37,5 @@ export LD_LIBRARY_PATH="$HOME/.local/usr/lib:$LD_LIBRARY_PATH"
 
 # == Jetbrains ================================================================
 export JETBRAINS_SCRIPTS="$HOME/.local/bin/jetbrains"
-mkdir -p $JETBRAINS_SCRIPTS 2>/dev/null
+mkdir -p "$JETBRAINS_SCRIPTS 2>/dev/null"
 PATH=$PATH:$JETBRAINS_SCRIPTS

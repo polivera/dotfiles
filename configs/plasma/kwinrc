@@ -1,14 +1,15 @@
 [Activities][LastVirtualDesktop]
 034dd6b0-862e-4b8f-bc7d-8209f281c52d=1fb79775-53ea-4e37-9388-3d662ca5b7f4
+05890312-2387-4122-8b57-acf68d4c3412=84eba182-6668-4b5b-a4f9-8a2175ab405c
 e0be7cfc-c85f-45d4-87ac-49a65457ad3c=ce9c58f5-4d18-4f85-8aeb-b08a00f44eae
 
 [Desktops]
-Id_1=ce9c58f5-4d18-4f85-8aeb-b08a00f44eae
-Id_2=32c57bd1-ea7f-499f-8180-b89354316722
-Id_3=cef7e82d-dd91-4efd-b8fc-e0a50331ae8f
-Id_4=009f1db9-823f-44ea-9d69-c61200c566c4
-Id_5=1fb79775-53ea-4e37-9388-3d662ca5b7f4
-Number=5
+Id_1=04ecdc6e-9034-4095-975c-b607b975b3cc
+Id_2=84eba182-6668-4b5b-a4f9-8a2175ab405c
+Id_3=43cda031-a2f4-446a-a666-59ffbd0e4949
+Id_4=5f383896-5b00-4eb5-91c4-781774340b9c
+Id_5[$d]
+Number=4
 Rows=1
 
 [NightColor]
@@ -26,11 +27,17 @@ padding=4
 [Tiling][23708101-7e33-5ff0-9dbb-63aad862e9e8]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][6493ee05-4313-57bc-843e-cac6fa98d831]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][92e842d7-5928-5c43-884a-4912e7cc82ed]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][9589dd37-0a6b-5f99-a1d4-83496d2f0a2a]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a5c7a2f0-ef88-57d1-8db4-abfcbc95fc36]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Xwayland]
-Scale=1
+Scale=1.1

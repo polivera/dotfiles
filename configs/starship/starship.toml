@@ -44,3 +44,11 @@ symbol=' '
 python_binary=['./venv/bin/python', 'python', 'python3', 'python2']
 format="via [$symbol ${version}](blue) [${virtualenv}](yellow)"
 
+
+# Customs
+# TODO: This is not working yet
+[env_var.TUNNEL_ACTIVE]
+variable = "TUNNEL_ACTIVE"
+default = ""
+format = "[🔗 TUNNEL]($style) "
+style = "bold purple"

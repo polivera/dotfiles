@@ -7,15 +7,18 @@
 [url "git@pergit:polivera"]
   insteadOf = https://github.com/polivera
 
+[url "git@pergit:flipflow-io"]
+  insteadOf = https://github.com/flipflow-io
+
 [pull]
   rebase = false
 
 [includeIf "gitdir:~/Projects/Personal/"]
   path = ~/.config/git/personal/config
 
+[includeIf "gitdir:~/Projects/Flipflow/"]
+  path = ~/.config/git/personal/config
+
 [includeIf "gitdir:~/WinProjects/Personal/"]
   path = ~/.config/git/win-personal/config
-
-[includeIf "gitdir:~/Projects/S4L/"]
-  path = ~/.config/git/work/config.s4l
 
