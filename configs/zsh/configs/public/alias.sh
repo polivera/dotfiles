@@ -65,6 +65,7 @@ alias dcur="docker compose up -d --force-recreate"
 alias dcurb="docker compose up -d --force-recreate --build"
 alias dx="docker context"
 alias dexec="docker exec -it"
+alias dsrm="docker stack rm"
 
 # Kubernetes
 alias k="kubectl"
