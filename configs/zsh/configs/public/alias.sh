@@ -75,6 +75,7 @@ alias kpf="kubectl port-forward"
 
 # Misc
 alias expofzf="export | fzf"
+alias leclip="xclip -sel clip"
 
 if [[ "$XAP_OS" = "arch" ]]; then
 	alias mirror-refresh="sudo reflector --country Spain,Germany,France,England --age 24 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
