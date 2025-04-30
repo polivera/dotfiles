@@ -25,4 +25,4 @@ style = "Italic"
 bindings = [{ key = "F11", action = "ToggleFullscreen" }]
 
 [window]
-padding = { x = 2, y = 0 }
+padding = { x = 10, y = 2 }
