@@ -64,3 +64,7 @@ format = "[󱠾 MySQL](bold red) "
 [custom.flipflow_tunnel_druid]
 when = "pgrep -f 'flipflow-tunnel-druid'"
 format = "[󱠾 Druid](bold red) "
+
+[custom.flipflow_tunnel_mongo]
+when = "pgrep -f 'flipflow-tunnel-mongo'"
+format = "[󱠾 Mongo](bold red) "
