@@ -35,6 +35,10 @@ PATH=$PATH:"$CARGO_HOME/bin"
 # == C ========================================================================
 export LD_LIBRARY_PATH="$HOME/.local/usr/lib:$LD_LIBRARY_PATH"
 
+# == JAVA ====================================================================
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
 # == Jetbrains ================================================================
 export JETBRAINS_SCRIPTS="$HOME/.local/bin/jetbrains"
 mkdir -p "$JETBRAINS_SCRIPTS 2>/dev/null"

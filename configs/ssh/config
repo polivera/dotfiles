@@ -14,7 +14,7 @@ Host pergit
     IdentitiesOnly yes
 
 Host git.vicugna.party
-    HostName ssh.git.vicugna.party
+    HostName git.vicugna.party
     User git
     Port 222
     IdentityFile ~/.ssh/personal-key.pub
