@@ -5,7 +5,11 @@ if [ -f '/opt/google/cloud-sdk/path.zsh.inc' ]; then
 	. '/opt/google/cloud-sdk/path.zsh.inc'
 
 	function gcloud_storage_cat() {
-		gcloud storage cat gs://"$1" | jq "${@:2}"
+		if [[ "$1" == *.gz ]]; then
+			gcloud storage cat gs://"$1" >/tmp/test.gz && gunzip /tmp/test.gz && cat /tmp/test | jq "${@:2}"
+		else
+			gcloud storage cat gs://"$1" | jq "${@:2}"
+		fi
 	}
 	alias gcat="gcloud_storage_cat"
 fi
