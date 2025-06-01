@@ -1,0 +1,64 @@
+# Use custom format
+format = '''
+$os$directory$git_branch$git_status$php$python$go$custom
+$character'''
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# ----------------------------------------------------------------
+# OS display configuration
+[os]
+format = '[$symbol](bold white)  '   
+disabled = false
+
+[os.symbols]
+Fedora = ''
+Windows = ''
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+Debian = ''
+
+# ----------------------------------------------------------------
+# Shows current directory
+[directory]
+truncation_length = 0
+truncation_symbol = '…/'
+home_symbol = '󰋜 '
+read_only_style = '197'
+read_only = '  '
+format = 'at [$path]($style)[$read_only]($read_only_style) '
+# ----------------------------------------------------------------
+
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[docker_context]
+format = "via [🐋 $context](blue bold)"
+
+[python]
+symbol=' '
+python_binary=['./venv/bin/python', 'python', 'python3', 'python2']
+format="via [$symbol ${version}](blue) [${virtualenv}](yellow)"
+
+
+# Customs
+[env_var.TUNNEL_STATUS]
+variable = "TUNNEL_STATUS"
+default = ""
+format = "[$env_value](bold purple) "
+
+[custom.flipflow_tunnel_mysql]
+when = "pgrep -f 'flipflow-tunnel-mysql'"
+format = "[󱠾 MySQL](bold red) "
+
+[custom.flipflow_tunnel_druid]
+when = "pgrep -f 'flipflow-tunnel-druid'"
+format = "[󱠾 Druid](bold red) "
+
+[custom.flipflow_tunnel_mongo]
+when = "pgrep -f 'flipflow-tunnel-mongo'"
+format = "[󱠾 Mongo](bold red) "

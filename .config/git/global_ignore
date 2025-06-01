@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+.vim-bookmarks
+.vscode
+.phpactor.json
+.env
+.dir-locals.el
+.xapenv
+.xapenv.leave
+.envrc
+.nvim.lua
+xapfolder/

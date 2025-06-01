@@ -1,0 +1,123 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+" ------------------------------------------------------------------
+"  Options
+" ------------------------------------------------------------------
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+set ignorecase
+set smartcase
+
+set nu
+set relativenumber
+
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+" ------------------------------------------------------------------
+"  Plugins
+" ------------------------------------------------------------------
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+" ------------------------------------------------------------------
+"  Mappings
+" ------------------------------------------------------------------
+" Commands                        Mode
+" --------                        ----
+" nmap, nnoremap, nunmap          Normal mode
+" imap, inoremap, iunmap          Insert and Replace mode
+" vmap, vnoremap, vunmap          Visual and Select mode
+" xmap, xnoremap, xunmap          Visual mode
+" smap, snoremap, sunmap          Select mode
+" cmap, cnoremap, cunmap          Command-line mode
+" omap, onoremap, ounmap          Operator pending mode
+" ------------------------------------------------------------------
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+" Map leader
+map <SPACE> <Nop>
+let mapleader = " "
+
+" maps
+" Don't use Ex mode, use Q for formatting.
+map Q q
+imap <C-g> <esc>
+nmap <C-g> <esc>
+
+" Change to upper and to lower shortcuts --------------------------------------
+map tu gU
+map tl gu
+vmap tu gU
+vmap tl gu
+
+" Continue shift --------------------------------------------------------------
+xnoremap < <gv
+xnoremap > >gv
+
+" Move up and down through menus
+"imap <C-k> <up>
+"imap <C-j> <down>
+"nmap <C-k> <up>
+"nmap <C-j> <down>
+
+
+" Basics ----------------------------------------------------------------------
+nmap <leader>w :action SaveDocument<CR>
+nmap <leader>v :action SplitVertically<CR>
+nmap <leader>x :action SplitHorizontally<CR>
+nmap <leader>c :action Unsplit<CR>
+nmap <Tab> :action NextTab<CR>
+nmap <S-Tab> :action PreviousTab<CR>
+
+" Find stuff ------------------------------------------------------------------
+map <leader>ff :action GotoFile<CR>
+nmap <leader>fj :action FindInPath<CR>
+nmap <leader>fu :action Switcher<CR>
+
+" Language related shortcuts --------------------------------------------------
+nmap <leader>ld <Action>(GotoDeclaration)
+nmap <leader>li <Action>(GotoImplementation)
+nmap <leader>ls <Action>(GotoSuperMethod)
+nmap <leader>lt <Action>(GotoTest)
+nmap <leader>ll <Action>(GotoFile)
+nmap <leader>lf <Action>(ReformatCode)
+nmap <leader>lo <Action>(OptimizeImports)
+nmap <leader>lr <Action>(RenameElement)
+
+
+" Delete Stuff ----------------------------------------------------------------
+nnoremap d "_d
+xnoremap d "_d
+nnoremap dd "_dd
+nnoremap dD 0"_d$
+nnoremap D "_D
+xnoremap D "_D
+nnoremap x "_x
+xnoremap x "_x
+nnoremap c "_c
+xnoremap c "_c
+nnoremap cc "_S
+nnoremap C "_C
+xnoremap C "_C
+nnoremap s "_s
+xnoremap s "_s
+nnoremap S "_S
+xnoremap S "_S
+nnoremap m d
+xnoremap m d
+nnoremap mm dd
+nnoremap M D

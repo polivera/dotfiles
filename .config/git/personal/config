@@ -1,0 +1,16 @@
+[init]
+	defaultBranch = main
+
+[user]
+  name = polivera
+  email = punk.moon2229@fastmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID9UeRtAtmY1GgiVA1bjur934w8jztRb3QUI1+eHKxnZ
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/opt/1Password/op-ssh-sign"
+
+[commit]
+  gpgsign = true
