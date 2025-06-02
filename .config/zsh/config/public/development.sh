@@ -9,6 +9,9 @@ add_to_path_variable "$LOCAL_PATH/bin"
 # == Custom Scripts ============================================================
 add_to_path_variable "$LOCAL_PATH/scripts"
 
+# == Custom PRIVATE Scripts ============================================================
+add_to_path_variable "$LOCAL_PATH/private-scripts"
+
 # == Neovim ====================================================================
 export NVIM_MASON="$LOCAL_PATH/share/nvim/mason"
 add_to_path_variable "$NVIM_MASON/bin"

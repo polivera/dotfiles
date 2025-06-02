@@ -1,2 +1,2 @@
 stow:
-	@stow -d ~/Projects/Personal/newdotfiles -t ~ .
+	@stow -d ~/Projects/Personal/dotfiles -t ~ .

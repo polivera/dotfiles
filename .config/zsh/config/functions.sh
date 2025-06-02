@@ -72,7 +72,6 @@ add_to_path_variable() {
     # Check if directory exists and is not already in PATH
     if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
         export PATH="$PATH:$new_path"
-        echo "Added $new_path to PATH"
     elif [[ ! -d "$new_path" ]]; then
         echo "Directory $new_path does not exist"
     fi
