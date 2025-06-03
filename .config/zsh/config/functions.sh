@@ -60,7 +60,7 @@ zsh_add_folder() {
 }
 
 # Add path to PATH if needed
-add_to_path_variable() {
+prepend_to_path() {
     local new_path="$1"
 
     # Check if parameter was provided
@@ -71,7 +71,7 @@ add_to_path_variable() {
 
     # Check if directory exists and is not already in PATH
     if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
-        export PATH="$PATH:$new_path"
+        export PATH="$new_path:$PATH"
     elif [[ ! -d "$new_path" ]]; then
         echo "Directory $new_path does not exist"
     fi

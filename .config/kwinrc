@@ -1,16 +1,14 @@
 [Activities][LastVirtualDesktop]
 034dd6b0-862e-4b8f-bc7d-8209f281c52d=1fb79775-53ea-4e37-9388-3d662ca5b7f4
-05890312-2387-4122-8b57-acf68d4c3412=84eba182-6668-4b5b-a4f9-8a2175ab405c
-de46199f-b12e-4e18-8308-f3c0d414a08f=84eba182-6668-4b5b-a4f9-8a2175ab405c
+05890312-2387-4122-8b57-acf68d4c3412=04ecdc6e-9034-4095-975c-b607b975b3cc
 e0be7cfc-c85f-45d4-87ac-49a65457ad3c=ce9c58f5-4d18-4f85-8aeb-b08a00f44eae
 
 [Desktops]
 Id_1=04ecdc6e-9034-4095-975c-b607b975b3cc
 Id_2=84eba182-6668-4b5b-a4f9-8a2175ab405c
 Id_3=43cda031-a2f4-446a-a666-59ffbd0e4949
-Id_4=03049e79-bde6-452e-86b8-5df152f39ea0
+Id_4=5f383896-5b00-4eb5-91c4-781774340b9c
 Id_5[$d]
-Name_4=New Desktop
 Number=4
 Rows=1
 
@@ -24,7 +22,7 @@ LatitudeFixed=38.77275763628614
 LongitudeAuto=-0.39
 LongitudeFixed=-0.19232205152326287
 Mode=Location
-NightTemperature=3000
+NightTemperature=3200
 
 [Tiling]
 padding=4
@@ -48,4 +46,4 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Xwayland]
-Scale=1
+Scale=1.1

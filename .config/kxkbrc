@@ -1,0 +1,7 @@
+[Layout]
+LayoutList=us
+Model=pc86
+Options=ctrl:nocaps
+ResetOldOptions=true
+Use=true
+VariantList=altgr-intl
