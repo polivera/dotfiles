@@ -30,6 +30,7 @@ set clipboard+=ideaput
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
 
 " ------------------------------------------------------------------
 "  Mappings

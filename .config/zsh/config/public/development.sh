@@ -26,7 +26,10 @@ prepend_to_path "$N_PREFIX/bin"
 
 # == PHP =======================================================================
 export PHPENV_ROOT=$LOCAL_PATH/phpenv
-mkdir -p "$PHPENV_ROOT/versions"
+if [[ -d $PHPENV_ROOT ]]; then
+  mkdir -p "$PHPENV_ROOT/versions"
+  eval "$(phpenv init -)"
+fi
 export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
 prepend_to_path "$PHP_COMPOSER_PATH/vendor/bin"
 
