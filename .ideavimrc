@@ -81,8 +81,8 @@ nmap <leader>w :action SaveDocument<CR>
 nmap <leader>v :action SplitVertically<CR>
 nmap <leader>x :action SplitHorizontally<CR>
 nmap <leader>c :action Unsplit<CR>
-nmap <Tab> :action NextTab<CR>
-nmap <S-Tab> :action PreviousTab<CR>
+nmap <leader>n :action NextTab<CR>
+nmap <leader>b :action PreviousTab<CR>
 
 " Find stuff ------------------------------------------------------------------
 map <leader>ff :action GotoFile<CR>
