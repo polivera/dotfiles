@@ -28,13 +28,37 @@ NightTemperature=3200
 [Tiling]
 padding=4
 
+[Tiling][04ecdc6e-9034-4095-975c-b607b975b3cc][]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][04ecdc6e-9034-4095-975c-b607b975b3cc][87f3198e-90bd-4dec-9bce-fac75484ad03]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][23708101-7e33-5ff0-9dbb-63aad862e9e8]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][43cda031-a2f4-446a-a666-59ffbd0e4949][]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][43cda031-a2f4-446a-a666-59ffbd0e4949][87f3198e-90bd-4dec-9bce-fac75484ad03]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][5f383896-5b00-4eb5-91c4-781774340b9c][]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][5f383896-5b00-4eb5-91c4-781774340b9c][87f3198e-90bd-4dec-9bce-fac75484ad03]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][6493ee05-4313-57bc-843e-cac6fa98d831]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][677301a9-d9fd-50e4-9f15-0a503410a6cd]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][84eba182-6668-4b5b-a4f9-8a2175ab405c][]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][84eba182-6668-4b5b-a4f9-8a2175ab405c][87f3198e-90bd-4dec-9bce-fac75484ad03]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][92e842d7-5928-5c43-884a-4912e7cc82ed]

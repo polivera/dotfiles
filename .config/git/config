@@ -4,10 +4,10 @@
 [core]
   excludesfile = ~/.config/git/global_ignore
 
-[url "git@pergit:polivera"]
+[url "git@github.com:polivera"]
   insteadOf = https://github.com/polivera
 
-[url "git@pergit:flipflow-io"]
+[url "git@github.com:flipflow-io"]
   insteadOf = https://github.com/flipflow-io
 
 [pull]

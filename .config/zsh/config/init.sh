@@ -7,6 +7,7 @@
 source $ZDOTDIR/config/functions.sh
 
 # Don't know
+# shellcheck disable=SC2155
 export GPG_TTY=$(tty)
 
 # Export XAP_OS file
