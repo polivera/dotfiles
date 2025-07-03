@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/opt/google/cloud-sdk/path.zsh.inc' ]; then
-	. '/opt/google/cloud-sdk/path.zsh.inc'
+if [ -f '/opt/google/cloud-sdk/path.zsh.inc' ] || [ -f '/opt/google-cloud-cli/path.zsh.inc' ]; then
+	# Source whichever file exists
+	[ -f '/opt/google/cloud-sdk/path.zsh.inc' ] && . '/opt/google/cloud-sdk/path.zsh.inc'
+	[ -f '/opt/google-cloud-cli/path.zsh.inc' ] && . '/opt/google-cloud-cli/path.zsh.inc'
 
 	function gcloud_storage_cat() {
 		if [[ "$1" == *.gz ]]; then
