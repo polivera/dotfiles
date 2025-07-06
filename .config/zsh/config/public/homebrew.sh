@@ -2,9 +2,7 @@
 
 if [[ "$XAP_OS" == "macos" ]];
 then
-  echo "Enter the macos"
   export HOMEBREW_PATH="/opt/homebrew"
-  echo "Append to path $HOMEBREW_PATH/bin"
   append_to_path "$HOMEBREW_PATH/bin"
   BREW_BIN="$HOMEBREW_PATH/bin/brew"
 
