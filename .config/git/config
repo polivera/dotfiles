@@ -10,6 +10,9 @@
 [url "git@github.com:flipflow-io"]
   insteadOf = https://github.com/flipflow-io
 
+[url "git@git.vicugna.party:polivera"]
+  insteadOf = https://git.vicugna.party/polivera
+
 [pull]
   rebase = false
 

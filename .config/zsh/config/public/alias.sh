@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 alias reload-zsh="source $ZDOTDIR/.zshrc"
-alias vialias="$EDITOR $ZDOTDIR/configs/public/alias.sh"
+alias vialias="$EDITOR $ZDOTDIR/config/public/alias.sh"
 
 case "$XAP_OS" in
 macos)
@@ -73,6 +73,11 @@ alias kgn="kubectl get nodes"
 alias kgp="kubectl get pods"
 alias kgs="kubectl get service"
 alias kpf="kubectl port-forward"
+
+# Terraform
+alias tfi="terraform init"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
 
 # Misc
 alias expofz="export | fzf"

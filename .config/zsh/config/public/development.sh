@@ -52,3 +52,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JETBRAINS_SCRIPTS="$HOME/.local/bin/jetbrains"
 mkdir -p "$JETBRAINS_SCRIPTS 2>/dev/null"
 prepend_to_path $JETBRAINS_SCRIPTS
+
+if [[ -d $HOME/.docker ]];
+then
+  fpath=($HOME/.docker/completions $fpath)
+fi

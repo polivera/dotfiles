@@ -61,31 +61,31 @@ zsh_add_folder() {
 
 # Add path to PATH if needed
 prepend_to_path() {
-    local new_path="$1"
-    # Check if parameter was provided
-    if [[ -z "$new_path" ]]; then
-        echo "Error: No path provided"
-        return 1
-    fi
-    # Check if directory exists and is not already in PATH
-    if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
-        export PATH="$new_path:$PATH"
-    elif [[ ! -d "$new_path" ]]; then
-        echo "Directory $new_path does not exist"
-    fi
+	local new_path="$1"
+	# Check if parameter was provided
+	if [[ -z "$new_path" ]]; then
+		echo "Error: No path provided"
+		return 1
+	fi
+	# Check if directory exists and is not already in PATH
+	if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
+		export PATH="$new_path:$PATH"
+	elif [[ ! -d "$new_path" ]]; then
+		# echo gDirectory $new_path does not exist"
+	fi
 }
 
 append_to_path() {
-    local new_path="$1"
-    # Check if parameter was provided
-    if [[ -z "$new_path" ]]; then
-        echo "Error: No path provided"
-        return 1
-    fi
-    # Check if directory exists and is not already in PATH
-    if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
-        export PATH="$new_path:$PATH"
-    elif [[ ! -d "$new_path" ]]; then
-        echo "Directory $new_path does not exist"
-    fi
+	local new_path="$1"
+	# Check if parameter was provided
+	if [[ -z "$new_path" ]]; then
+		echo "Error: No path provided"
+		return 1
+	fi
+	# Check if directory exists and is not already in PATH
+	if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
+		export PATH="$new_path:$PATH"
+	elif [[ ! -d "$new_path" ]]; then
+		echo "Directory $new_path does not exist"
+	fi
 }

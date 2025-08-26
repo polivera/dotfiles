@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/opt/google/cloud-sdk/path.zsh.inc' ] || [ -f '/opt/google-cloud-cli/path.zsh.inc' ]; then
+if [ -f '/opt/google/cloud-sdk/path.zsh.inc' ] || [ -f '/opt/google-cloud-cli/path.zsh.inc' ] || [ -f '/opt/homebrew/bin/gcloud' ]; then
 	# Source whichever file exists
 	[ -f '/opt/google/cloud-sdk/path.zsh.inc' ] && . '/opt/google/cloud-sdk/path.zsh.inc'
 	[ -f '/opt/google-cloud-cli/path.zsh.inc' ] && . '/opt/google-cloud-cli/path.zsh.inc'
@@ -13,7 +13,7 @@ if [ -f '/opt/google/cloud-sdk/path.zsh.inc' ] || [ -f '/opt/google-cloud-cli/pa
 			gcloud storage cat gs://"$1" | jq "${@:2}"
 		fi
 	}
-	alias gcat="gcloud_storage_cat"
+	alias micat="gcloud_storage_cat"
 fi
 
 # The next line enables shell command completion for gcloud.
