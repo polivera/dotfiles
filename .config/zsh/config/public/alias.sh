@@ -24,6 +24,7 @@ fi
 alias nv='nvim'
 alias v='nvim'
 alias vim='nvim'
+alias nvnew='NVIM_APPNAME=nvim-new nvim'
 
 # Grep
 alias grep='grep --color=auto'
@@ -82,6 +83,10 @@ alias tfa="terraform apply"
 # Misc
 alias expofz="export | fzf"
 alias selclip="xclip -sel clip"
+
+# PHP 
+alias artisan-debug="XDEBUG_SESSION=1 php artisan"
+alias artisan="php artisan"
 
 if [[ "$XAP_OS" = "arch" ]]; then
 	alias mirror-refresh="sudo reflector --country Spain,Germany,France,England --age 24 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
