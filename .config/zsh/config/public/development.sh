@@ -53,6 +53,11 @@ export JETBRAINS_SCRIPTS="$HOME/.local/bin/jetbrains"
 mkdir -p "$JETBRAINS_SCRIPTS 2>/dev/null"
 prepend_to_path $JETBRAINS_SCRIPTS
 
+if [[ "$XAP_OS" == "macos" ]]; then
+    export CHROME_EXECUTABLE="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    export PUPPETEER_EXECUTABLE_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+fi
+
 if [[ -d $HOME/.docker ]];
 then
   fpath=($HOME/.docker/completions $fpath)
