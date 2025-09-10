@@ -85,7 +85,7 @@ alias expofz="export | fzf"
 alias selclip="xclip -sel clip"
 
 # PHP 
-alias artisan-debug="XDEBUG_SESSION=1 php artisan"
+alias artisan-debug="XDEBUG_SESSION_START=1 php artisan"
 alias artisan="php artisan"
 
 if [[ "$XAP_OS" = "arch" ]]; then
