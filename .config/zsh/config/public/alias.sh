@@ -6,9 +6,12 @@ alias vialias="$EDITOR $ZDOTDIR/config/public/alias.sh"
 case "$XAP_OS" in
 macos)
 	alias ls="gls -l --color --group-directories-first -h"
+  alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 	;;
-arch)
+arch|fedora)
 	alias open="xdg-open"
+  alias subl="echo 'not set yet'"
+  alias pbcopy="xclip -sel clip"
 	;;
 esac
 
@@ -18,6 +21,7 @@ fi
 
 if command -v bat &>/dev/null; then
 	alias cat='bat'
+    alias less='bat --paging=always'
 fi
 
 # NeoVim
