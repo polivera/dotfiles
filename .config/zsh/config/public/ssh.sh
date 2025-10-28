@@ -1,7 +1,7 @@
 # SSH Agent configuration
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     # Start ssh-agent if not running
-    eval "$(ssh-agent -s)"
+    eval "$(ssh-agent -s)" &>/dev/null
 fi
 
 # Add key if not already loaded

@@ -1,4 +1,5 @@
 .idea
 Makefile
+Justfile
 .git
 .gitignore

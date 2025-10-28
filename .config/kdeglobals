@@ -142,12 +142,13 @@ Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\
 
 [General]
 AccentColor=61,174,233
-BrowserApplication=vivaldi-stable.desktop
-ColorSchemeHash=8ff306d9a93379c74540e00506966df24df1798b
+BrowserApplication=brave-browser.desktop
+ColorSchemeHash=9f63c7711a13123582e720791ea0f8c0172977d2
 LastUsedCustomAccentColor=61,174,233
 
 [KDE]
 AnimationDurationFactor=0.08838834764831843
+AutomaticLookAndFeel=true
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
 
