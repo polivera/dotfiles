@@ -48,17 +48,18 @@ export LD_LIBRARY_PATH="$HOME/.local/usr/lib:$LD_LIBRARY_PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
-# == Jetbrains ================================================================
-export JETBRAINS_SCRIPTS="$HOME/.local/bin/jetbrains"
-mkdir -p "$JETBRAINS_SCRIPTS 2>/dev/null"
-prepend_to_path $JETBRAINS_SCRIPTS
+# LLM
+export OLLAMA_MODELS="$HOME/.ai-models/ollama/models"
 
+# Crawlers
 if [[ "$XAP_OS" == "macos" ]]; then
     export CHROME_EXECUTABLE="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
     export PUPPETEER_EXECUTABLE_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 fi
 
+# == Docker ====================================================================
 if [[ -d $HOME/.docker ]];
 then
   fpath=($HOME/.docker/completions $fpath)
 fi
+

@@ -26,3 +26,4 @@ bindings = [{ key = "F11", action = "ToggleFullscreen" }]
 
 [window]
 padding = { x = 10, y = 2 }
+# decorations = "none"
