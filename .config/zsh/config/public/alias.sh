@@ -18,6 +18,7 @@ fi
 
 if command -v bat &>/dev/null; then
 	alias cat='bat'
+    alias less='bat --paging=always'
 fi
 
 # NeoVim
