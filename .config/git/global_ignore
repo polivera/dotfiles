@@ -10,3 +10,4 @@
 .envrc
 .nvim.lua
 xapfolder/
+.php-cs-fixer.cache
