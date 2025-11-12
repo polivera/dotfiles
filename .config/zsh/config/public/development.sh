@@ -30,8 +30,12 @@ if [[ -d $PHPENV_ROOT ]]; then
   mkdir -p "$PHPENV_ROOT/versions"
   eval "$(phpenv init -)"
 fi
+# Composer
 export PHP_COMPOSER_PATH=$XDG_CONFIG_HOME/composer
 prepend_to_path "$PHP_COMPOSER_PATH/vendor/bin"
+# Symfony
+export SYMFONY_HOME=$HOME/.symfony5/
+prepend_to_path "$SYMFONY_HOME/bin"
 
 # == GO ========================================================================
 export GOPATH=$XDG_DATA_HOME/go
