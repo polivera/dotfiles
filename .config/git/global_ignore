@@ -3,7 +3,6 @@
 .vim-bookmarks
 .vscode
 .phpactor.json
-.env
 .dir-locals.el
 .xapenv
 .xapenv.leave
