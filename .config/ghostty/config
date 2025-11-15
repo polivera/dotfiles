@@ -56,5 +56,6 @@ font-size = 12
 
 # Keybindings
 keybind = shift+enter=text:\x1b\r
-keybind = f11=window_toggle_fullscreen
+keybind = f11=toggle_fullscreen
+keybind = ctrl+f11=reload_config
 
