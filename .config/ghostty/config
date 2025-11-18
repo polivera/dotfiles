@@ -59,3 +59,9 @@ keybind = shift+enter=text:\x1b\r
 keybind = f11=toggle_fullscreen
 keybind = ctrl+f11=reload_config
 
+# Fix AltGr for US International keyboard (Linux)
+keybind = right_alt=unbind
+
+# Fix Option key for dead keys on macOS (e.g., Option+e+vowel for accents)
+macos-option-as-alt = false
+
