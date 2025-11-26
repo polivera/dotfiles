@@ -50,7 +50,7 @@
 
 # Configs
 # fullscreen = true
-theme = Gruvbox Dark Hard
+theme = Tokyonight
 font-family = IosevkaTerm NF
 font-size = 14 
 
