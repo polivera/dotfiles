@@ -50,7 +50,7 @@
 
 # Configs
 # fullscreen = true
-theme = Tokyonight
+theme = Dracula
 font-family = IosevkaTerm NF
 font-size = 14 
 
