@@ -94,6 +94,10 @@ alias artisan-debug="XDEBUG_SESSION_START=1 php artisan"
 alias artisan="php artisan"
 alias php-debug="XDEBUG_SESSION_START=1 php"
 
+# Python
+alias pyactivate="source ./venv/bin/activate"
+
+# Arch Pacman
 if [[ "$XAP_OS" = "arch" ]]; then
 	alias mirror-refresh="sudo reflector --country Spain,Germany,France,England --age 24 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
 	alias pm="sudo pacman"
