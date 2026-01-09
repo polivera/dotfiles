@@ -95,7 +95,7 @@ alias artisan="php artisan"
 alias php-debug="XDEBUG_SESSION_START=1 php"
 
 # Python
-alias pyactivate="source ./venv/bin/activate"
+alias pyactivate="source ./.venv/bin/activate"
 
 # Arch Pacman
 if [[ "$XAP_OS" = "arch" ]]; then

@@ -3,7 +3,7 @@
 if [[ "$XAP_OS" == "macos" ]];
 then
   export HOMEBREW_PATH="/opt/homebrew"
-  append_to_path "$HOMEBREW_PATH/bin"
+  prepend_to_path "$HOMEBREW_PATH/bin"
   BREW_BIN="$HOMEBREW_PATH/bin/brew"
 
   if type "${BREW_BIN}" &> /dev/null; then

@@ -67,3 +67,6 @@ then
   fpath=($HOME/.docker/completions $fpath)
 fi
 
+# == OpenCode ==================================================================
+export OPENCODE_PATH=/Users/pablo/.opencode
+prepend_to_path "$OPENCODE_PATH/bin"

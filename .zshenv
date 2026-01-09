@@ -23,3 +23,6 @@ else
   fi
 fi
 export EDITOR
+
+# opencode
+export PATH=/Users/pablo/.opencode/bin:$PATH
