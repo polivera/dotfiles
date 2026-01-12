@@ -10,8 +10,8 @@ macos)
 	;;
 arch|fedora)
 	alias open="xdg-open"
-  alias subl="echo 'not set yet'"
-  alias pbcopy="xclip -sel clip"
+    alias subl="/opt/sublime_text/sublime_text"
+    alias pbcopy="xclip -sel clip"
 	;;
 esac
 
