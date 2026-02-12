@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Switch PHP version on macOS using Homebrew
+
+if [[ "$(uname)" != "Darwin" ]]; then
+    echo "Error: This script only works on macOS"
+    exit 1
+fi
+
+if [[ -z "$1" ]]; then
+    echo "Usage: mac-switch-php <version>"
+    echo "Example: mac-switch-php 8.4"
+    exit 1
+fi
+
+version="$1"
+
+echo "Switching to PHP $version..."
+
+brew unlink php 2>/dev/null
+brew link --overwrite --force "php@$version"

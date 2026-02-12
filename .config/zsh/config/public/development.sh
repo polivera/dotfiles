@@ -68,5 +68,5 @@ then
 fi
 
 # == OpenCode ==================================================================
-export OPENCODE_PATH=/Users/pablo/.opencode
+export OPENCODE_PATH=$HOME/.opencode
 prepend_to_path "$OPENCODE_PATH/bin"

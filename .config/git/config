@@ -7,6 +7,9 @@
 [url "git@github.com:polivera"]
   insteadOf = https://github.com/polivera
 
+[url "git@github.com:menuda-dev"]
+  insteadOf = https://github.com/menuda-dev
+
 [url "git@github.com:flipflow-io"]
   insteadOf = https://github.com/flipflow-io
 

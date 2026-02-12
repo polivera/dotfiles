@@ -27,15 +27,19 @@ function zsh_add_file() {
 # Function to load plugins
 # @author: ChristianChiarulli - https://github.com/ChristianChiarulli/Machfiles/blob/master/zsh/.config/zsh/zsh-functions
 function zsh_add_plugin() {
-	PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
+	PLUGIN_NAME=$(echo "$1" | cut -d "/" -f 2)
 	if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then
 		# For plugins
 		zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" ||
 			zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
 	else
 		echo "Installing plugin $PLUGIN_NAME"
-		git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"
-		zsh_add_plugin $1
+		if git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"; then
+			zsh_add_plugin "$1"
+		else
+			echo "Error: Failed to install plugin $PLUGIN_NAME"
+			return 1
+		fi
 	fi
 }
 
@@ -70,8 +74,6 @@ prepend_to_path() {
 	# Check if directory exists and is not already in PATH
 	if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
 		export PATH="$new_path:$PATH"
-	elif [[ ! -d "$new_path" ]]; then
-		# echo gDirectory $new_path does not exist"
 	fi
 }
 
@@ -84,8 +86,6 @@ append_to_path() {
 	fi
 	# Check if directory exists and is not already in PATH
 	if [[ -d "$new_path" ]] && [[ ":$PATH:" != *":$new_path:"* ]]; then
-		export PATH="$new_path:$PATH"
-	elif [[ ! -d "$new_path" ]]; then
-		echo "Directory $new_path does not exist"
+		export PATH="$PATH:$new_path"
 	fi
 }
