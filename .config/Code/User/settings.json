@@ -1,3 +1,4 @@
 {
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "editor.minimap.enabled": false
 }
