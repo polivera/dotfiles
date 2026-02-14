@@ -1,1 +1,10 @@
 .config/zsh/.zsh_sessions/
+.claude/
+.config/Code/*
+!.config/Code/User/
+.config/Code/User/*
+!.config/Code/User/settings.json
+!.config/Code/User/keybindings.json
+!.config/Code/User/snippets/
+!.config/Code/User/NEOVIM_MIGRATION.md
+!.config/Code/extensions.txt

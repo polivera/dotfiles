@@ -1,0 +1,72 @@
+[
+  // File operations
+  { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+  { "key": "ctrl+shift+f", "command": "workbench.action.findInFiles" },
+  { "key": "ctrl+shift+o", "command": "workbench.action.gotoSymbol" },
+
+  // LSP shortcuts
+  { "key": "space l d", "command": "editor.action.revealDefinition", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l r", "command": "editor.action.goToReferences", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l i", "command": "editor.action.goToImplementation", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l t", "command": "editor.action.goToTypeDefinition", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l a", "command": "editor.action.quickFix", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l n", "command": "editor.action.rename", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l f", "command": "editor.action.formatDocument", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l l", "command": "editor.action.showHover", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l e", "command": "workbench.actions.view.problems", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space l s", "command": "workbench.action.gotoSymbol", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space l shift+s", "command": "workbench.action.showAllSymbols", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space l k", "command": "editor.action.triggerParameterHints", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+
+  // Git shortcuts
+  { "key": "space o g", "command": "workbench.view.scm", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space o a", "command": "gitlens.toggleFileBlame", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space o t", "command": "gitlens.toggleLineBlame", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space o shift+l", "command": "gitlens.showGraph", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space o f", "command": "git.viewFileHistory", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space o l", "command": "gitlens.showFileHistory", "when": "vim.active && vim.mode == 'Normal'" },
+
+  // File explorer
+  { "key": "space \\", "command": "workbench.action.toggleSidebarVisibility", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space /", "command": "workbench.files.action.focusFilesExplorer", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space f \\", "command": "workbench.files.action.showActiveFileInExplorer", "when": "vim.active && vim.mode == 'Normal'" },
+
+  // Telescope-like file search
+  { "key": "space f l", "command": "workbench.action.quickOpen", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space f u", "command": "workbench.action.showAllEditors", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space f r", "command": "workbench.action.openRecent", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space f j", "command": "workbench.action.findInFiles", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space f /", "command": "editor.action.addSelectionToNextFindMatch", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+
+  // Trouble-like diagnostics
+  { "key": "space x x", "command": "workbench.actions.view.problems", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space x l", "command": "editor.action.goToReferences", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+  { "key": "space x s", "command": "workbench.action.gotoSymbol", "when": "editorTextFocus && vim.active && vim.mode == 'Normal'" },
+
+  // Debugging
+  { "key": "space d o", "command": "workbench.action.debug.continue", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space d n", "command": "workbench.action.debug.stepOver", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space d i", "command": "workbench.action.debug.stepInto", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space d u", "command": "workbench.action.debug.stepOut", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space d b", "command": "editor.debug.action.toggleBreakpoint", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space d r", "command": "workbench.debug.action.toggleRepl", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space d q", "command": "workbench.action.debug.stop", "when": "vim.active && vim.mode == 'Normal'" },
+
+  // Buffer/file operations
+  { "key": "space w", "command": "workbench.action.files.save", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space q", "command": "workbench.action.closeActiveEditor", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space shift+q", "command": "workbench.action.closeAllEditors", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space w r", "command": "workbench.action.files.revert", "when": "vim.active && vim.mode == 'Normal'" },
+
+  // Tabs
+  { "key": "space a n", "command": "workbench.action.newGroupEditor", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space a q", "command": "workbench.action.closeEditorsInGroup", "when": "vim.active && vim.mode == 'Normal'" },
+
+  // Harpoon shortcuts
+  { "key": "space h a", "command": "vscode-harpoon.addEditor", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space h g", "command": "vscode-harpoon.editorQuickPick", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space 1", "command": "vscode-harpoon.gotoEditor1", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space 2", "command": "vscode-harpoon.gotoEditor2", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space 3", "command": "vscode-harpoon.gotoEditor3", "when": "vim.active && vim.mode == 'Normal'" },
+  { "key": "space 4", "command": "vscode-harpoon.gotoEditor4", "when": "vim.active && vim.mode == 'Normal'" }
+]
