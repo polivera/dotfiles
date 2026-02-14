@@ -1,7 +1,6 @@
 .idea
 .DS_Store
 .vim-bookmarks
-.vscode
 .phpactor.json
 .dir-locals.el
 .xapenv
