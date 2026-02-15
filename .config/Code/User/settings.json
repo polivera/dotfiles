@@ -1,4 +1,119 @@
 {
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "keyboard.dispatch": "keyCode",
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        // Quick save and quit
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "Q"
+            ],
+            "commands": [
+                "workbench.action.closeAllEditors"
+            ]
+        },
+        // Case transformation
+        {
+            "before": [
+                "t",
+                "u"
+            ],
+            "after": [
+                "g",
+                "U"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "l"
+            ],
+            "after": [
+                "g",
+                "u"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "t"
+            ],
+            "after": [
+                "~"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                ":bnext"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                ":bprevious"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "\\"
+            ],
+            "commands": [
+                "workbench.files.action.focusFilesExplorer"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        // Cancel with ctrl + g (escape alternative)
+        {
+            "before": [
+                "<C-g>"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+
+    "vim.handleKeys": {
+        "<C-j>": false,
+        "<C-k>": false
+    },
     "claudeCode.preferredLocation": "panel",
-    "editor.minimap.enabled": false
+    "go.languageServerFlags": [],
+    "go.buildTags": "unit"
 }
