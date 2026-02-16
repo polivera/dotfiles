@@ -19,6 +19,8 @@ ms-python.vscode-python-envs
 mtxr.sqltools
 oderwat.indent-rainbow
 sclu1034.justfile
+svelte.svelte-vscode
+syler.sass-indented
 usernamehw.errorlens
 vscodevim.vim
 xdebug.php-debug
