@@ -51,8 +51,8 @@
 # Configs
 # fullscreen = true
 theme = Dracula
-font-family = IosevkaTerm NF
-font-size = 14 
+font-family = Iosevka Term:style=Regular
+font-size = 11 
 
 # Keybindings
 keybind = shift+enter=text:\x1b\r

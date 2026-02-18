@@ -115,6 +115,7 @@
     },
     "claudeCode.preferredLocation": "panel",
     "go.languageServerFlags": [],
-    "go.buildTags": "unit",
-    "svelte.enable-ts-plugin": true
+    "go.buildTags": "unit,integration",
+    "svelte.enable-ts-plugin": true,
+    "claudeCode.selectedModel": "default"
 }
