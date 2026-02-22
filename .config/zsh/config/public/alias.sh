@@ -60,7 +60,7 @@ alias gstash="git stash"
 alias gdf="git diff"
 alias glog="git log"
 alias gw="git worktree"
-alias gbranch-clean="git branch -vv | grep ': gone' | awk '{print \$1}' | xargs -r git branch -D"
+alias gfprune="git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D"
 
 # Docker
 alias d="docker"
