@@ -40,6 +40,7 @@ prepend_to_path "$SYMFONY_HOME/bin"
 # == GO ========================================================================
 export GOPATH=$XDG_DATA_HOME/go
 prepend_to_path "$GOPATH/bin"
+export GOPRIVATE=github.com/menuda-dev/*
 
 # == RUST ======================================================================
 export CARGO_HOME=$LOCAL_PATH/share/cargo
